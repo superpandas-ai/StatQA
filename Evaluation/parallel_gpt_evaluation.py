@@ -79,7 +79,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     selected_model = args.selected_model
     trick = args.trick
-    dataset_name = 'micro-StatQA for ' + trick
+    dataset_name = 'mini-StatQA for ' + trick
     suffix = args.suffix
 
     # Path setting

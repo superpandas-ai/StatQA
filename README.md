@@ -120,7 +120,7 @@ python Evaluation/gpt_evaluation.py
 	--trick "zero-shot" # prompting strategies
 ```
 
-Also, if you want to parallelize the GPT evaluation to improve efficiency, you can use `parallel_gpt_evaluation.py` like this:
+If you hope to parallelize the GPT evaluation to improve efficiency, we also provide script `parallel_gpt_evaluation.py`, you can use it in this way:
 
 ```bash
 python Evaluation/parallel_gpt_evaluation.py 
@@ -198,13 +198,13 @@ sh Script\answer_analysis.sh
 If you find our work useful or inspiring, please kindly cite:
 
 ```latex
-@misc{zhu2024large,
-      title={Are Large Language Models Good Statisticians?}, 
-      author={Yizhang Zhu and Shiyin Du and Boyan Li and Yuyu Luo and Nan Tang},
-      year={2024},
-      eprint={2406.07815},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{
+	zhu2024are,
+    title={Are Large Language Models Good Statisticians?},
+    author={Yizhang Zhu and Shiyin Du and Boyan Li and Yuyu Luo and Nan Tang},
+    booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2024},
+    url={https://openreview.net/forum?id=j4CRWz418M}
 }
 ```
 
