@@ -120,6 +120,16 @@ python Evaluation/gpt_evaluation.py
 	--trick "zero-shot" # prompting strategies
 ```
 
+Also, if you want to parallelize the GPT evaluation to improve efficiency, you can use `parallel_gpt_evaluation.py` like this:
+
+```bash
+python Evaluation/parallel_gpt_evaluation.py 
+	--selected_model "gpt-3.5-turbo" 
+	--trick "zero-shot" 
+	--batch_size 20 # size of the batch used for saving
+	--threads 20 # threads in parallelized evaluation
+```
+
 We also provide `gpt_exp.sh` script for you to run evaluations for ChatGPT (gpt-3.5-turbo), GPT-4 and recently released GPT-4o with different prompting strategies, you can modify it to meet your needs and run it by this:
 
 ```bash
