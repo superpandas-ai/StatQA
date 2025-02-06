@@ -62,7 +62,7 @@ Benchmark construction:
 sh Script\benchmark_construction.sh
 ```
 
-Obtained StatQA and mini-StatQA benchmarks will be stored in `Data/Integrated Dataset/Balanced Benchmark`. Note that this process can take many hours and consume considerable API tokens, so please be patient or you can directly use the benchmark we already offered in `StatQA/`.
+The obtained StatQA and mini-StatQA benchmarks will be stored in `Data/Integrated Dataset/Balanced Benchmark`. Note that this process can take many hours and consume considerable API tokens, so please be patient or you can directly use the benchmark we already offered in `StatQA/`.
 
 ## 🧪Evaluation
 
@@ -182,7 +182,7 @@ LLaMA-Factory/saves/{MODEL}/lora/predict/generated_predictions.jsonl
 ```
 Note that `{MODEL}` can be one of "llama2-7b", "llama3-8b" and "llama3-8b-instruct".
 
-**⚠Attention:** You may encounter some errors to run these commands directly on RTX 4000 series GPUs like RTX 4090 because of some hardware limitations. Therefore, we also provide a `bash` script for users who want to fine-tune models with our dataset on RTX 4000 GPUs, please refer to `Finetuning/LLaMA-Factory/sft_rtx4000.sh`.
+**⚠Attention:** You may encounter some errors when running these commands directly on RTX 4000 series GPUs like RTX 4090 because of some hardware limitations. Therefore, we also provide a `bash` script for users who want to fine-tune models with our dataset on RTX 4000 GPUs, please refer to `Finetuning/LLaMA-Factory/sft_rtx4000.sh`.
 
 
 ## 📊Analysis
@@ -198,12 +198,16 @@ sh Script\answer_analysis.sh
 If you find our work useful or inspiring, please kindly cite:
 
 ```latex
-@inproceedings{zhu2024are,
-    title={Are Large Language Models Good Statisticians?},
-    author={Yizhang Zhu and Shiyin Du and Boyan Li and Yuyu Luo and Nan Tang},
-    booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
-    year={2024},
-    url={https://openreview.net/forum?id=j4CRWz418M}
+@inproceedings{zhu2024statqa,
+ author = {Zhu, Yizhang and Du, Shiyin and Li, Boyan and Luo, Yuyu and Tang, Nan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {62697--62731},
+ publisher = {Curran Associates, Inc.},
+ title = {Are Large Language Models Good Statisticians?},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/729786203d330da046dd8091c2d92a66-Paper-Datasets_and_Benchmarks_Track.pdf},
+ volume = {37},
+ year = {2024}
 }
 ```
 
