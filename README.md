@@ -1,8 +1,10 @@
-# StatQA: Are Large Language Models Good Statisticians?
+<h1 align="left">[StatQA Benchmark] <br> Are Large Language Models Good Statisticians?</h1>
 
-[🏠[Project Homepage]](https://statqa.github.io/)  [📃[Paper Link]](https://arxiv.org/abs/2406.07815) 
+[![Homepage](https://img.shields.io/badge/🏠-Homepage-green)](https://statqa.github.io/)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.07815-b31b1b.svg?style=flat)](https://arxiv.org/abs/2406.07815)
+[![Python](https://img.shields.io/badge/Python-3.10.13-3776AB.svg?style=flat)](https://www.python.org/downloads/release/python-31013/)
 
-Official repository for the paper *“Are Large Language Models Good Statisticians?”*.
+Official repository for the paper *"Are Large Language Models Good Statisticians?"*.
 
 ![pipeline](/Chart/README/StatQA_cover.png)
 
@@ -25,8 +27,8 @@ We recommend you to create a conda virtual environment to run our project.
 Firstly, create environment and install required python libraries from requirements.txt:
 
 ```bash
-conda create --name newEnv python=3.11
-conda activate newEnv
+conda create --name statqa python=3.10.13
+conda activate statqa
 pip install -r requirements.txt
 ```
 
