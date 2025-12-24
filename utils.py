@@ -245,27 +245,83 @@ def is_normality_ad(sample, alpha=0.05):
 
 '''
 New extraction function:
-Extracts and returns the first JSON object found within the first pair of braces in the input string.
-If the substring enclosed by the first pair of braces is a valid JSON, it returns this substring.
+Extracts and returns the first balanced JSON object found within braces in the input string.
+Also supports extraction from fenced ```json code blocks.
+If the substring enclosed by balanced braces is a valid JSON, it returns this substring.
 If there are no braces or the JSON is invalid, it returns "Invalid Answer".
 '''
-def extract_json_answer(input_string): # New extraction function: 
-    # Find the position of the first opening brace
-    start_index = input_string.find('{')
-    # Find the position of the first closing brace starting from just after the first opening brace
-    end_index = input_string.find('}', start_index)
-    if start_index != -1 and end_index != -1 and start_index < end_index:
-        # Extract the substring that includes the first set of braces
-        json_str = input_string[start_index:end_index+1]
+def extract_json_answer(input_string):
+    """
+    Extract the first balanced JSON object from the input string.
+    Supports both inline JSON {...} and fenced ```json blocks.
+    
+    Returns:
+        str: Valid JSON string or "Invalid Answer"
+    """
+    # First, try to extract from fenced code block
+    json_fence_pattern = r'```json\s*(.*?)\s*```'
+    import re
+    fence_match = re.search(json_fence_pattern, input_string, re.DOTALL)
+    
+    if fence_match:
+        json_candidate = fence_match.group(1).strip()
         try:
-            # Attempt to parse the JSON string to check its validity
-            json.loads(json_str)
-            return json_str
+            # Validate it's proper JSON
+            json.loads(json_candidate)
+            return json_candidate
         except ValueError:
-            # Return an error message if the JSON is not valid
-            return "Invalid Answer"
-    else:
-        # Return an error message if no valid braces are found
+            pass  # Fall through to brace-based extraction
+    
+    # Find the first opening brace
+    start_index = input_string.find('{')
+    if start_index == -1:
+        return "Invalid Answer"
+    
+    # Now find the matching closing brace using balanced counting
+    brace_count = 0
+    end_index = -1
+    in_string = False
+    escape_next = False
+    
+    for i in range(start_index, len(input_string)):
+        char = input_string[i]
+        
+        # Handle string literals (to avoid counting braces inside strings)
+        if escape_next:
+            escape_next = False
+            continue
+        
+        if char == '\\':
+            escape_next = True
+            continue
+        
+        if char == '"':
+            in_string = not in_string
+            continue
+        
+        if in_string:
+            continue
+        
+        # Count braces
+        if char == '{':
+            brace_count += 1
+        elif char == '}':
+            brace_count -= 1
+            if brace_count == 0:
+                end_index = i
+                break
+    
+    if end_index == -1:
+        return "Invalid Answer"
+    
+    # Extract the JSON string
+    json_str = input_string[start_index:end_index+1]
+    
+    try:
+        # Validate it's proper JSON
+        json.loads(json_str)
+        return json_str
+    except ValueError:
         return "Invalid Answer"
 
 

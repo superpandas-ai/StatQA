@@ -19,12 +19,59 @@ PROMPT_CLASSIFICATION = '''Correlation Analysis: Pearson Correlation Coefficient
 Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
 Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
 Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
-Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance.'''
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.'''
 
 PROMPT_RESPONSE = '''The answer of relevant columns and applicable methods in JSON format is:'''
 PROMPT_RESPONSE_EXPLAIN = '''The answer of relevant columns and applicable methods in JSON format and reason is:'''
 
 PROMPT_COT = '''Let's work this out in a step-by-step way to be sure we have the right answer. '''
+
+
+'''-------------------------------------------
+Enhanced prompt for StressQA with superstat-compatible JSON contract
+'''
+
+STRESSQA_TASK_DESCRIPTION = '''You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.'''
+
+STRESSQA_INSTRUCTION = '''You should reply with a single JSON object containing the following keys:
+
+1. "columns": List of column headers relevant to the question.
+2. "methods": List of all applicable statistical methods you selected.
+3. "applicability": Boolean indicating whether the analysis is applicable given the data and question.
+4. "checks": Object describing assumption checks you performed (e.g., {"normality": true, "equal_variance": false}).
+5. "warnings": List of warnings about violated assumptions or limitations.
+6. "test_result": Object with keys "statistic", "df", "p_value" if applicable.
+7. "effect_size": Object with keys "value" and "type" (e.g., cohen_d, eta_squared).
+8. "ci": Object with keys "lower", "upper", "level" for confidence intervals.
+9. "post_hoc": Object describing post-hoc tests if needed (e.g., {"recommended": ["Tukey HSD"], "reason": "Omnibus test significant"}).
+10. "corrections": String describing multiple testing correction applied if any.
+11. "audit_trail": Object with keys "prerequisite_checks", "method_choice_reason", "alternatives_rejected" providing short deterministic explanations.
+
+Example format: 
+{
+  "columns": ["col1", "col2"],
+  "methods": ["Independent Samples t-test"],
+  "applicability": true,
+  "checks": {"normality": true, "equal_variance": false},
+  "warnings": ["Equal variance assumption violated; Welch t-test recommended"],
+  "test_result": {"statistic": 2.45, "df": 98, "p_value": 0.016},
+  "effect_size": {"value": 0.49, "type": "cohen_d"},
+  "ci": {"lower": 0.12, "upper": 1.84, "level": 0.95},
+  "post_hoc": null,
+  "corrections": null,
+  "audit_trail": {
+    "prerequisite_checks": "Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)",
+    "method_choice_reason": "Selected Welch t-test due to unequal variances",
+    "alternatives_rejected": "Student's t-test rejected due to heteroscedasticity"
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.'''
+
+STRESSQA_RESPONSE = '''The complete statistical analysis in JSON format is:'''
 
 
 
