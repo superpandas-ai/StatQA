@@ -1,0 +1,6 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+duncan_prestige,rownames,other,45,False,
+duncan_prestige,type,cate,45,False,
+duncan_prestige,income,quant,45,False,
+duncan_prestige,education,quant,45,False,
+duncan_prestige,prestige,quant,45,False,

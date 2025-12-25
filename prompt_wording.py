@@ -220,3 +220,37 @@ Bartlett Test, F-Test for Variance: Whether there is a significant difference in
 # Descriptive Statistics
 Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis.'''
 
+STRESSQA_STATS_PROMPT = '''Methods and applicable usage scenarios:
+# Correlation Analysis
+Pearson Correlation Coefficient, Spearman Correlation Coefficient: Correlation analysis for two quantitative variables;
+Kendall Correlation Coefficient: Correlation analysis for two quantitative variables, suitable for small samples;
+Partial Correlation Coefficient: Correlation analysis when involving controlling variable;
+# Distribution Compliance Test
+Anderson-Darling Test, Kolmogorov-Smirnov Test for Normality: Test for normality;
+Shapiro-Wilk Test of Normality: Test for normality, suitable for small samples;
+Lilliefors Test: Test for normality, suitable for large samples;
+Kolmogorov-Smirnov Test: Comparison of distribution between two independent samples;
+Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution: Test for corresponding distributions;
+# Contingency Table Test
+Chi-square Independence Test: Contingency table test of large sample categorical variables;
+Fisher Exact Test: Contingency table test of small sample categorical variables;
+Mantel-Haenszel Test: Contingency table test when strata data to be controlled; 
+# Variance Test
+Mood Variance Test, Levene Test: Whether there is a significant difference;
+Bartlett Test, F-Test for Variance: Whether there is a significant difference in variance between normally distributed variables;
+# Descriptive Statistics
+Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+# Group Comparison
+Independent Samples t-test, Welch t-test: Compare means of two independent groups (use Welch when variances unequal);
+Mann-Whitney U Test: Non-parametric alternative for two independent groups;
+Paired Samples t-test, Wilcoxon Signed-Rank Test: Compare means of two related/paired groups;
+One-Way ANOVA: Compare means across three or more independent groups (requires post-hoc if significant);
+Kruskal-Wallis H Test: Non-parametric alternative for three or more groups;
+# Regression
+Simple Linear Regression: Model linear relationship between one predictor and outcome;
+Multiple Linear Regression: Model linear relationship with multiple predictors;
+Analysis of Covariance (ANCOVA): Compare group means while controlling for covariates;
+# Multiple Testing
+Multiple Endpoints with Benjamini-Hochberg: FDR correction for multiple comparisons (less conservative);
+Multiple Endpoints with Bonferroni: Conservative correction for multiple comparisons;
+Multiple Endpoints with Holm-Bonferroni: Step-down Bonferroni correction.'''

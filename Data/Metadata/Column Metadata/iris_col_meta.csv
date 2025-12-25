@@ -1,0 +1,6 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+iris,sepal length (cm),quant,150,False,
+iris,sepal width (cm),cate,150,False,
+iris,petal length (cm),quant,150,False,
+iris,petal width (cm),cate,150,False,
+iris,target,cate,150,False,

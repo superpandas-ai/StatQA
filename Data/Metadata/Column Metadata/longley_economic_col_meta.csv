@@ -1,0 +1,8 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+longley_economic,TOTEMP,quant,16,True,
+longley_economic,GNPDEFL,quant,16,True,
+longley_economic,GNP,quant,16,True,
+longley_economic,UNEMP,quant,16,True,
+longley_economic,ARMED,quant,16,True,
+longley_economic,POP,quant,16,True,
+longley_economic,YEAR,quant,16,True,

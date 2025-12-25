@@ -154,6 +154,10 @@ class HeteroscedasticityModifier(BaseModifier):
                 raise ValueError("Need at least one numeric column")
             target_var = numeric_cols[0]
         
+        # Convert target column to float to avoid dtype warnings when modifying
+        if df_modified[target_var].dtype not in [np.float64, np.float32]:
+            df_modified[target_var] = df_modified[target_var].astype(np.float64)
+        
         # Find or create binary grouping variable
         if group_var is None:
             # Create binary split
@@ -180,7 +184,8 @@ class HeteroscedasticityModifier(BaseModifier):
         values_b = df_modified.loc[group_b_mask, target_var].values
         centered = values_b - mean_b
         scaled = centered * np.sqrt(variance_ratio)
-        df_modified.loc[group_b_mask, target_var] = scaled + mean_b
+        new_values = scaled + mean_b
+        df_modified.loc[group_b_mask, target_var] = new_values
         
         # Run Levene's test to verify heteroscedasticity
         group_a_vals = df_modified.loc[group_a_mask, target_var].dropna()

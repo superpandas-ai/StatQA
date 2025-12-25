@@ -1,6 +1,6 @@
 #!/bin/bash
 # Organize prompts for StressQA benchmark
-# Similar to prompt_organization.sh but for StressQA with enhanced JSON contract
+# Uses StressTest/prompt_organization.py with enhanced JSON contract
 
 echo "=========================================="
 echo "StressQA Prompt Organization"
@@ -13,7 +13,7 @@ TRICK_NAME="zero-shot"
 DATASET_NAME="mini-StressQA"
 
 # Parse command line arguments
-while [[ $# -gt 0 ]]; do
+while [ $# -gt 0 ]; do
     case $1 in
         --trick)
             TRICK_NAME="$2"
@@ -38,10 +38,6 @@ echo "  Dataset: $DATASET_NAME"
 echo "  Trick: $TRICK_NAME"
 echo ""
 
-# Note: This would need a StressQA-specific prompt organizer
-# For now, we can use the existing one with extended prompt wording
-# A proper implementation would create StressTest/prompt_organization.py
-
 # Check if StressQA dataset exists
 STRESSQA_PATH="Data/Integrated Dataset/Balanced Benchmark/${DATASET_NAME}.csv"
 
@@ -51,19 +47,21 @@ if [ ! -f "$STRESSQA_PATH" ]; then
     exit 1
 fi
 
-echo "Note: StressQA uses enhanced JSON contract with audit trails"
-echo "The prompt wording has been extended in prompt_wording.py"
-echo ""
-echo "To organize prompts, you can adapt Construction/prompt_organization.py"
-echo "to use STRESSQA_INSTRUCTION and STRESSQA_RESPONSE from prompt_wording.py"
-echo ""
-echo "For now, StressQA benchmark is ready for evaluation with:"
-echo "  - Extended method list (Group Comparison, Regression, Multiple Testing)"
-echo "  - Enhanced JSON contract fields"
-echo "  - Oracle computations with tolerances"
-echo ""
+# Run StressQA prompt organization
+python StressTest/prompt_organization.py \
+    --trick_name "$TRICK_NAME" \
+    --integ_dataset_name "$DATASET_NAME"
 
-echo "=========================================="
-echo "StressQA prompt organization info displayed"
-echo "=========================================="
+if [ $? -eq 0 ]; then
+    echo ""
+    echo "=========================================="
+    echo "StressQA prompt organization complete!"
+    echo "=========================================="
+else
+    echo ""
+    echo "=========================================="
+    echo "Error: Prompt organization failed"
+    echo "=========================================="
+    exit 1
+fi
 

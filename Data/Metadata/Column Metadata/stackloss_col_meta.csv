@@ -1,0 +1,5 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+stackloss,STACKLOSS,quant,21,False,
+stackloss,AIRFLOW,quant,21,False,
+stackloss,WATERTEMP,quant,21,False,
+stackloss,ACIDCONC,quant,21,False,

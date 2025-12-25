@@ -1,0 +1,3 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+engel_food,income,quant,235,False,
+engel_food,foodexp,quant,235,False,

@@ -1,0 +1,6 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+grunfeld_investment,invest,quant,220,False,
+grunfeld_investment,value,quant,220,False,
+grunfeld_investment,capital,quant,220,False,
+grunfeld_investment,firm,cate,220,False,
+grunfeld_investment,year,cate,220,False,

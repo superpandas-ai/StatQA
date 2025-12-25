@@ -1,0 +1,1873 @@
+dataset,refined_question,relevant_column,task,difficulty,results,analysis_spec_id,difficulty_axes,acceptable_methods,oracle,is_applicable,prompt
+grunfeld_investment,Compare condition_A to condition_B,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""paired_unpaired_trap""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by type?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""heteroscedasticity""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by type?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Compare condition_A to condition_B,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""paired_unpaired_trap""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in year between groups defined by firm?,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,[],"[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in year between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by rownames?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""heteroscedasticity""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 45""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by rownames?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in year between groups defined by firm?,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""heteroscedasticity""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in year between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in capital between groups defined by firm?,"[{""column_header"": ""capital"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,[],"[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in capital between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by type?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,[],"[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by type?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Compare condition_A to condition_B,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""paired_unpaired_trap""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Compare condition_A to condition_B,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""paired_unpaired_trap""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 44""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in income between groups defined by rownames?,"[{""column_header"": ""income"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,[],"[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 45""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in income between groups defined by rownames?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in year between groups defined by firm?,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""heteroscedasticity""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in year between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by type?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,[],"[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by type?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in income between groups defined by rownames?,"[{""column_header"": ""income"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""heteroscedasticity""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 45""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in income between groups defined by rownames?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Compare condition_A to condition_B,"[{""column_header"": ""invest"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""paired_unpaired_trap""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by rownames?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,[],"[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 45""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by rownames?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in capital between groups defined by firm?,"[{""column_header"": ""capital"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""heteroscedasticity""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in capital between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Compare condition_A to condition_B,"[{""column_header"": ""income"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""paired_unpaired_trap""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 44""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Compare condition_A to condition_B,"[{""column_header"": ""income"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""paired_unpaired_trap""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 44""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by type?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""heteroscedasticity""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by type?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in year between groups defined by firm?,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,[],"[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in year between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Compare condition_A to condition_B,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""paired_unpaired_trap""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in year between groups defined by firm?,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,[],"[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in year between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in income between groups defined by rownames?,"[{""column_header"": ""income"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,[],"[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 45""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in income between groups defined by rownames?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Compare condition_A to condition_B,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""paired_unpaired_trap""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Compare condition_A to condition_B,"[{""column_header"": ""capital"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""paired_unpaired_trap""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in invest between groups defined by firm?,"[{""column_header"": ""invest"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,[],"[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in invest between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in income between groups defined by rownames?,"[{""column_header"": ""income"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""rownames"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""heteroscedasticity""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 45""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in income between groups defined by rownames?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in capital between groups defined by firm?,"[{""column_header"": ""capital"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""heteroscedasticity""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in capital between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in capital between groups defined by firm?,"[{""column_header"": ""capital"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,[],"[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in capital between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in year between groups defined by firm?,"[{""column_header"": ""year"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""heteroscedasticity""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in year between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by type?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,[],"[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by type?
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Compare condition_A to condition_B,"[{""column_header"": ""capital"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Independent Samples t-test"", ""conclusion"": ""Not applicable""}]",independent_t_test,"[""paired_unpaired_trap""]","[[""Independent Samples t-test"", ""Two-sample t-test"", ""Student's t-test""], [""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Independent Samples t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Is there a difference in prestige between groups defined by type?,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""heteroscedasticity""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Is there a difference in prestige between groups defined by type?
+### Response: The complete statistical analysis in JSON format is:"
+duncan_prestige,Compare condition_A to condition_B,"[{""column_header"": ""prestige"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""type"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""subject_id"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Mann-Whitney U Test"", ""conclusion"": ""Not applicable""}]",mann_whitney,"[""paired_unpaired_trap""]","[[""Mann-Whitney U Test"", ""Mann-Whitney test"", ""Wilcoxon rank-sum test""]]","{""method"": ""Mann-Whitney U Test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 3""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: rownames; data_type: other; num_of_rows: 45; is_normality: False.
+column_header: type; data_type: categorical; num_of_rows: 45; is_normality: False.
+column_header: income; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: education; data_type: quantitative; num_of_rows: 45; is_normality: False.
+column_header: prestige; data_type: quantitative; num_of_rows: 45; is_normality: False.
+### Statistical Question: Compare condition_A to condition_B
+### Response: The complete statistical analysis in JSON format is:"
+grunfeld_investment,Is there a difference in invest between groups defined by firm?,"[{""column_header"": ""invest"", ""is_strata"": false, ""is_control"": false}, {""column_header"": ""firm"", ""is_strata"": false, ""is_control"": false}]",Group Comparison,medium,"[{""method"": ""Welch t-test"", ""conclusion"": ""Not applicable""}]",welch_t_test,"[""heteroscedasticity""]","[[""Welch t-test"", ""Welch's t-test""]]","{""method"": ""Welch t-test"", ""is_applicable"": false, ""ci_level"": 0.95, ""warnings"": [""Requires exactly 2 groups, got 11""]}",False,"### Task Description: You need to perform a complete statistical analysis for the given question, including selecting relevant columns, identifying all applicable methods, checking prerequisites, computing results, and providing a deterministic audit trail of your reasoning.
+### Instruction: You should reply with a single JSON object containing the following keys:
+
+1. ""columns"": List of column headers relevant to the question.
+2. ""methods"": List of all applicable statistical methods you selected.
+3. ""applicability"": Boolean indicating whether the analysis is applicable given the data and question.
+4. ""checks"": Object describing assumption checks you performed (e.g., {""normality"": true, ""equal_variance"": false}).
+5. ""warnings"": List of warnings about violated assumptions or limitations.
+6. ""test_result"": Object with keys ""statistic"", ""df"", ""p_value"" if applicable.
+7. ""effect_size"": Object with keys ""value"" and ""type"" (e.g., cohen_d, eta_squared).
+8. ""ci"": Object with keys ""lower"", ""upper"", ""level"" for confidence intervals.
+9. ""post_hoc"": Object describing post-hoc tests if needed (e.g., {""recommended"": [""Tukey HSD""], ""reason"": ""Omnibus test significant""}).
+10. ""corrections"": String describing multiple testing correction applied if any.
+11. ""audit_trail"": Object with keys ""prerequisite_checks"", ""method_choice_reason"", ""alternatives_rejected"" providing short deterministic explanations.
+
+Example format: 
+{
+  ""columns"": [""col1"", ""col2""],
+  ""methods"": [""Independent Samples t-test""],
+  ""applicability"": true,
+  ""checks"": {""normality"": true, ""equal_variance"": false},
+  ""warnings"": [""Equal variance assumption violated; Welch t-test recommended""],
+  ""test_result"": {""statistic"": 2.45, ""df"": 98, ""p_value"": 0.016},
+  ""effect_size"": {""value"": 0.49, ""type"": ""cohen_d""},
+  ""ci"": {""lower"": 0.12, ""upper"": 1.84, ""level"": 0.95},
+  ""post_hoc"": null,
+  ""corrections"": null,
+  ""audit_trail"": {
+    ""prerequisite_checks"": ""Checked normality (Shapiro-Wilk: group1 p=0.23, group2 p=0.18) and homogeneity of variance (Levene: p=0.003)"",
+    ""method_choice_reason"": ""Selected Welch t-test due to unequal variances"",
+    ""alternatives_rejected"": ""Student's t-test rejected due to heteroscedasticity""
+  }
+}
+
+Ensure your methods selection is limited to the classification list provided.
+### Classification List: 
+Correlation Analysis: Pearson Correlation Coefficient, Spearman Correlation Coefficient, Kendall Correlation Coefficient, Partial Correlation Coefficient;
+Distribution Compliance Test: Anderson-Darling Test, Shapiro-Wilk Test of Normality, Kolmogorov-Smirnov Test for Normality, Lilliefors Test, Kolmogorov-Smirnov Test, Kolmogorov-Smirnov Test for Uniform distribution, Kolmogorov-Smirnov Test for Gamma distribution, Kolmogorov-Smirnov Test for Exponential distribution;
+Contingency Table Test: Chi-square Independence Test, Fisher Exact Test, Mantel-Haenszel Test;
+Descriptive Statistics: Mean, Median, Mode, Range, Quartile, Standard Deviation, Skewness, Kurtosis;
+Variance Test: Mood Variance Test, Levene Test, Bartlett Test, F-Test for Variance;
+Group Comparison: Independent Samples t-test, Welch t-test, Mann-Whitney U Test, Paired Samples t-test, Wilcoxon Signed-Rank Test, One-Way ANOVA, Kruskal-Wallis H Test;
+Regression: Simple Linear Regression, Multiple Linear Regression, Analysis of Covariance (ANCOVA);
+Multiple Testing: Multiple Endpoints with Benjamini-Hochberg, Multiple Endpoints with Bonferroni, Multiple Endpoints with Holm-Bonferroni.
+### Column Information: 
+column_header: invest; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: value; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: capital; data_type: quantitative; num_of_rows: 220; is_normality: False.
+column_header: firm; data_type: categorical; num_of_rows: 220; is_normality: False.
+column_header: year; data_type: categorical; num_of_rows: 220; is_normality: False.
+### Statistical Question: Is there a difference in invest between groups defined by firm?
+### Response: The complete statistical analysis in JSON format is:"

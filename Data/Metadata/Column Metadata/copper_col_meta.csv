@@ -1,0 +1,7 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+copper,WORLDCONSUMPTION,quant,25,True,
+copper,COPPERPRICE,quant,25,True,
+copper,INCOMEINDEX,quant,25,False,
+copper,ALUMPRICE,quant,25,False,
+copper,INVENTORYINDEX,quant,25,True,
+copper,TIME,quant,25,True,

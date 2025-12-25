@@ -1,0 +1,12 @@
+dataset,column_header,data_type,num_of_rows,is_normality,column_description
+diabetes,age,cate,442,False,
+diabetes,sex,cate,442,False,
+diabetes,bmi,quant,442,False,
+diabetes,bp,quant,442,False,
+diabetes,s1,quant,442,False,
+diabetes,s2,quant,442,False,
+diabetes,s3,cate,442,False,
+diabetes,s4,cate,442,False,
+diabetes,s5,quant,442,False,
+diabetes,s6,cate,442,False,
+diabetes,target,quant,442,False,
