@@ -3,20 +3,15 @@
 Error type analysis.
 """
 
-import sys
-import os
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 
-# Add parent directory to path to import mappings
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-import mappings
-
 from ..pipeline import BaseAnalysis
 from ..config import AnalysisContext
 from ..io import save_csv
+from ..mappings import tasks_to_methods
 
 
 class ErrorTypeAnalysis(BaseAnalysis):
@@ -56,7 +51,7 @@ class ErrorTypeAnalysis(BaseAnalysis):
         # Build list of all valid methods (flattened, lowercase)
         methods_list = [
             method.lower() 
-            for methods in mappings.tasks_to_methods.values() 
+            for methods in tasks_to_methods.values() 
             for method in methods
         ]
         

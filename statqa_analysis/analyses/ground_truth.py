@@ -3,13 +3,7 @@
 Derive ground truth from results and relevant_column columns.
 """
 
-import sys
-import os
 import json
-
-# Add parent directory to path to import utils
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-import utils
 
 from ..pipeline import BaseAnalysis
 from ..config import AnalysisContext

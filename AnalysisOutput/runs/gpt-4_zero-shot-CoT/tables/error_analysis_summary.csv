@@ -1,0 +1,2 @@
+Model,Invalid Answer,Column Selection Error (CSE),Statistical Task Confusion (STC),Applicability Error (AE),Mixed Errors (CSE+STC),Mixed Errors (CSE+AE),Mixed Errors (STC+AE),Mixed Errors (CSE+STC+AE)
+gpt-4_zero-shot-CoT,0.00946,0.01032,0.03525,0.48753,0.00602,0.01806,0.0,0.0

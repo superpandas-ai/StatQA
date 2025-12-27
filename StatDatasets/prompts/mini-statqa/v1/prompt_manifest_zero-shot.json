@@ -1,0 +1,9 @@
+{
+  "dataset_id": "mini-statqa",
+  "prompt_version": "v1",
+  "trick": "zero-shot",
+  "seed": 42,
+  "generation_time": "2025-12-27T13:57:54.269255",
+  "row_count": 1163,
+  "prompt_template_hash": "0b3f2c73"
+}

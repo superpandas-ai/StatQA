@@ -1,0 +1,2 @@
+Model,Invalid Answer,Column Selection Error (CSE),Statistical Task Confusion (STC),Applicability Error (AE),Mixed Errors (CSE+STC),Mixed Errors (CSE+AE),Mixed Errors (STC+AE),Mixed Errors (CSE+STC+AE)
+default,0.00086,0.00344,0.0172,0.45228,0.00774,0.01462,0.0,0.0

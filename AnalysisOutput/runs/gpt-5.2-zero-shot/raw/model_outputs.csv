@@ -1,0 +1,1164 @@
+model_answer,serial_number
+"{""columns"":[""GRE Score"",""LOR ""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",0
+"{""columns"":[""United States"",""Bangladesh"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Standard Deviation"",""Range"",""Quartile""]}",1
+"{""columns"":[""Terrorist Death Type : Killed"",""Attack method: Hostage Taking (Kidnapping)"",""Attack method: Armed Assault""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",2
+"{""columns"":[""MntMeatProducts""],""methods"":[""Skewness"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",3
+"{""columns"":[""happyScore"",""GDP""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",4
+"{""columns"":[""income_inequality""],""methods"":[""Mean""]}",5
+"{""columns"":[""Age""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",6
+"{""columns"":[""Vietnam"",""Year""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Skewness"",""Kurtosis""]}",7
+"{""columns"":[""adjusted_satisfaction""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Variance Test""]}",8
+"{""columns"":[""reading score""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",9
+"{""columns"":[""Calories Burn"",""Actual Weight""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",10
+"{""columns"":[""F2017""],""methods"":[""Kurtosis""]}",11
+"{""columns"":[""goout"",""famrel"",""studytime""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",12
+"{""columns"":[""Death Age : 21-50 ""],""methods"":[""Median""]}",13
+"{""columns"":[""newyorkretail"",""averagespread"",""farmprice""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",14
+"{""columns"":[""Japan"",""Brazil"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",15
+"{""columns"":[""United States"",""Philippines""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",16
+"{""columns"":[""median_income""],""methods"":[""Median""]}",17
+"{""columns"":[""Sp_Def""],""methods"":[""Kurtosis""]}",18
+"{""columns"":[""Preferred Foot"",""Weak Foot""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",19
+"{""columns"":[""age"",""freetime""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",20
+"{""columns"":[""ALCOHOL CONSUMING"",""SHORTNESS OF BREATH""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",21
+"{""columns"":[""Weight""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",22
+"{""columns"":[""Age""],""methods"":[""Range"",""Mean"",""Median"",""Mode"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",23
+"{""columns"":[""Research Environment Score""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",24
+"{""columns"":[""Tenure"",""EstimatedSalary""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",25
+"{""columns"":[""Nigeria"",""China""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",26
+"{""columns"":[""Height_m"",""Weight_kg""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",27
+"{""columns"":[""ANU""],""methods"":[""Range""]}",28
+"{""columns"":[""Attack method: Hostage Taking (Kidnapping)""],""methods"":[""Kurtosis""]}",29
+"{""columns"":[""Rest of World""],""methods"":[""Standard Deviation""]}",30
+"{""columns"":[""studytime"",""health"",""age""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",31
+"{""columns"":[""TV Ad Budget ($)"",""Sales ($)""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",32
+"{""columns"":[""NumWebPurchases"",""MntMeatProducts"",""MntSweetProducts""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",33
+"{""columns"":[""Dream Weight"",""Heart Rate""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",34
+"{""columns"":[""Pakistan"",""Brazil"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",35
+"{""columns"":[""FastingBS"",""ChestPainType""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",36
+"{""columns"":[""Nigeria"",""Bangladesh""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",37
+"{""columns"":[""Age"",""Overall""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",38
+"{""columns"":[""PEER_PRESSURE"",""CHEST PAIN""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",39
+"{""columns"":[""Medu"",""freetime""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",40
+"{""columns"":[""Attack method: Unarmed Assault"",""Attack method: Armed Assault""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",41
+"{""columns"":[""MntGoldProds""],""methods"":[""Standard Deviation""]}",42
+"{""columns"":[""Sp_Atk"",""Pr_Male"",""Attack""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",43
+"{""columns"":[""reason"",""activities""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",44
+"{""columns"":[""CH2O""],""methods"":[""Quartile""]}",45
+"{""columns"":[""ChestPainType"",""HeartDisease""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",46
+"{""columns"":[""# of Homeless Individuals Served at The Source""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",47
+"{""columns"":[""MntGoldProds""],""methods"":[""Standard Deviation""]}",48
+"{""columns"":[""schoolsup"",""internet"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",49
+"{""columns"":[""Value"",""Release Clause""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",50
+"{""columns"":[""Philippines"",""Vietnam""],""methods"":[""Anderson-Darling Test"",""Kolmogorov-Smirnov Test""]}",51
+"{""columns"":[""Defense"",""Speed""],""methods"":[""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Variance Test: Mood Variance Test"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance""]}",52
+"{""columns"":[""std_satisfaction"",""median_income""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",53
+"{""columns"":[""Height_m"",""Weight_kg""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",54
+"{""columns"":[""HP"",""Sp_Atk""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",55
+"{""columns"":[""Kidhome"",""NumCatalogPurchases""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",56
+"{""columns"":[""PEER_PRESSURE"",""SHORTNESS OF BREATH"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",57
+"{""columns"":[""Philippines"",""Bangladesh""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",58
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",59
+"{""columns"":[""goout"",""Walc""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",60
+"{""columns"":[""Total eMedia Circulation"",""New Cardholders""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",61
+"{""columns"":[""Death Age :  1-5""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",62
+"{""columns"":[""YELLOW_FINGERS"",""CHEST PAIN""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",63
+"{""columns"":[""Pakistan"",""Bangladesh""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",64
+"{""columns"":[""Terrorist attacks""],""methods"":[""Median""]}",65
+"{""columns"":[""Death Age : 21-50 ""],""methods"":[""Descriptive Statistics: Quartile""]}",66
+"{""columns"":[""kms_driven"",""max_power(bhp)""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",67
+"{""columns"":[""Sp_Atk""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",68
+"{""columns"":[""F2014""],""methods"":[""Range""]}",69
+"{""columns"":[""reading score""],""methods"":[""Standard Deviation""]}",70
+"{""columns"":[""Income"",""NumDealsPurchases""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",71
+"{""columns"":[""Age""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test""]}",72
+"{""columns"":[""MntWines"",""Z_Revenue""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",73
+"{""columns"":[""Myanmar"",""India"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",74
+"{""columns"":[""kms_driven""],""methods"":[""Standard Deviation""]}",75
+"{""columns"":[""Attack method: Assassination"",""Attack method: Hijacking"",""Attack method: Facility/Infrastructure Attack""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",76
+"{""columns"":[""Review #""],""methods"":[""Mean""]}",77
+"{""columns"":[""Walc"",""G1""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",78
+"{""columns"":[""FATIGUE "",""SWALLOWING DIFFICULTY"",""SMOKING"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",79
+"{""columns"":[""age"",""bmi""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",80
+"{""columns"":[""AcceptedCmp2"",""Response""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",81
+"{""columns"":[""CreditScore"",""EstimatedSalary""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",82
+"{""columns"":[""Research Quality Score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",83
+"{""columns"":[""Income"",""NumWebVisitsMonth""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Standard Deviation"",""Range"",""Quartile"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",84
+"{""columns"":[""Cholesterol""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",85
+"{""columns"":[""hasGender"",""isLegendary""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",86
+"{""columns"":[""COUGHING"",""SWALLOWING DIFFICULTY"",""WHEEZING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",87
+"{""columns"":[""reason"",""activities""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",88
+"{""columns"":[""New Cardholders"",""# of Attendees at Children's and Teen Programming""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",89
+"{""columns"":[""MntWines""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",90
+"{""columns"":[""sex"",""romantic""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",91
+"{""columns"":[""Total Library Visitors"",""Total eMedia Circulation""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",92
+"{""columns"":[""median_income"",""happyScore""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",93
+"{""columns"":[""MntMeatProducts"",""MntSweetProducts""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",94
+"{""columns"":[""MaxHR"",""Oldpeak""],""methods"":[""Kolmogorov-Smirnov Test""]}",95
+"{""columns"":[""MntWines"",""MntFishProducts""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",96
+"{""columns"":[""SquareFeet"",""Bathrooms""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",97
+"{""columns"":[""# of Homeless Individuals Served at The Source""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Median"",""Quartile"",""Range"",""Skewness"",""Kurtosis""]}",98
+"{""columns"":[""Calories Burn"",""BMI""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",99
+"{""columns"":[""GENDER""],""methods"":[""Mode""]}",100
+"{""columns"":[""gpa""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",101
+"{""columns"":[""Potential"",""Special""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",102
+"{""columns"":[""Z_CostContact""],""methods"":[""Descriptive Statistics: Kurtosis""]}",103
+"{""columns"":[""GRE Score""],""methods"":[""Skewness""]}",104
+"{""columns"":[""NCP""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Mode"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis""]}",105
+"{""columns"":[""Europe"",""Review""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",106
+"{""columns"":[""studytime"",""health""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",107
+"{""columns"":[""CAEC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",108
+"{""columns"":[""NumWebPurchases""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Range""]}",109
+"{""columns"":[""F2019""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Variance Test""]}",110
+"{""columns"":[""Bangladesh""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",111
+"{""columns"":[""New Cardholders"",""# of Attendees at Children's and Teen Programming""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",112
+"{""columns"":[""NumCatalogPurchases""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",113
+"{""columns"":[""Total"",""Weight_kg""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",114
+"{""columns"":[""Overall"",""Special""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Standard Deviation"",""Range"",""Quartile""]}",115
+"{""columns"":[""Total"",""Weight_kg""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",116
+"{""columns"":[""AcceptedCmp2""],""methods"":[""Mode""]}",117
+"{""columns"":[""MntFishProducts""],""methods"":[""Kurtosis"",""Mean"",""Median"",""Standard Deviation"",""Skewness""]}",118
+"{""columns"":[""MntFishProducts"",""NumCatalogPurchases""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",119
+"{""columns"":[""SCC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",120
+"{""columns"":[""reading score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",121
+"{""columns"":[""Attack method: Assassination"",""Terrorist Death Type : Killed""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",122
+"{""columns"":[""JUN""],""methods"":[""Standard Deviation""]}",123
+"{""columns"":[""# of Homeless Individuals Served at The Source""],""methods"":[""Skewness""]}",124
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",125
+"{""columns"":[""address"",""reason""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",126
+"{""columns"":[""F2020""],""methods"":[""Skewness"",""Mean"",""Median"",""Quartile"",""Standard Deviation"",""Kurtosis""]}",127
+"{""columns"":[""famrel""],""methods"":[""Skewness"",""Kurtosis""]}",128
+"{""columns"":[""math score"",""reading score""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",129
+"{""columns"":[""HP"",""Attack""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",130
+"{""columns"":[""Pstatus"",""activities""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",131
+"{""columns"":[""avg_satisfaction"",""std_satisfaction""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",132
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",133
+"{""columns"":[""Catch_Rate""],""methods"":[""Quartile""]}",134
+"{""columns"":[""Pakistan"",""Thailand"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",135
+"{""columns"":[""Age"",""Overall""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",136
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",137
+"{""columns"":[""FastingBS"",""RestingECG""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",138
+"{""columns"":[""HP"",""Sp_Def""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",139
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",140
+"{""columns"":[""Review""],""methods"":[""Mean""]}",141
+"{""columns"":[""Income"",""Teenhome""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",142
+"{""columns"":[""Height_m"",""Weight_kg""],""methods"":[""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",143
+"{""columns"":[""Philippines"",""India""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",144
+"{""columns"":[""F2011""],""methods"":[""Quartile""]}",145
+"{""columns"":[""FAF""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",146
+"{""columns"":[""RestingBP""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",147
+"{""columns"":[""SHORTNESS OF BREATH""],""methods"":[""Mode""]}",148
+"{""columns"":[""Industry Score"",""Teaching Score""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",149
+"{""columns"":[""Oldpeak"",""Cholesterol"",""MaxHR""],""methods"":[""Partial Correlation Coefficient""]}",150
+"{""columns"":[""Speed"",""Height_m"",""Attack""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",151
+"{""columns"":[""NumWebVisitsMonth"",""MntSweetProducts"",""MntMeatProducts""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",152
+"{""columns"":[""Walc"",""absences""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",153
+"{""columns"":[""Total"",""Weight_kg""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",154
+"{""columns"":[""CH2O"",""Weight"",""FCVC""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Pearson Correlation Coefficient"",""Kendall Correlation Coefficient""]}",155
+"{""columns"":[""ALLERGY "",""LUNG_CANCER"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",156
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",157
+"{""columns"":[""Thailand"",""Year""],""methods"":[""Skewness""]}",158
+"{""columns"":[""Age"",""Weight""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",159
+"{""columns"":[""Indonesia"",""China"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Standard Deviation"",""Range"",""Quartile""]}",160
+"{""columns"":[""Income"",""NumStorePurchases""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",161
+"{""columns"":[""ALLERGY "",""ALCOHOL CONSUMING"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",162
+"{""columns"":[""Brazil""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",163
+"{""columns"":[""Kit Number""],""methods"":[""Mode""]}",164
+"{""columns"":[""TV Ad Budget ($)"",""Sales ($)""],""methods"":[""Anderson-Darling Test"",""Kolmogorov-Smirnov Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",165
+"{""columns"":[""Pstatus"",""guardian""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",166
+"{""columns"":[""Myanmar"",""Year""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",167
+"{""columns"":[""Price""],""methods"":[""Range""]}",168
+"{""columns"":[""Philippines"",""China""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",169
+"{""columns"":[""Medu""],""methods"":[""Mean"",""Median"",""Mode"",""Standard Deviation"",""Quartile"",""Range""]}",170
+"{""columns"":[""sex"",""famsup"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",171
+"{""columns"":[""HS-101""],""methods"":[""Descriptive Statistics: Mode""]}",172
+"{""columns"":[""Gender"",""IsActiveMember""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",173
+"{""columns"":[""SHORTNESS OF BREATH"",""LUNG_CANCER"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",174
+"{""columns"":[""F2020""],""methods"":[""Skewness"",""Mean"",""Median"",""Quartile"",""Standard Deviation"",""Kurtosis"",""Range""]}",175
+"{""columns"":[""writing score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",176
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",177
+"{""columns"":[""imdb_score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis"",""Mean"",""Median"",""Standard Deviation"",""Quartile""]}",178
+"{""columns"":[""Total Library Visitors"",""Total Computer Usage (Wireless + PC Sessions)""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",179
+"{""columns"":[""Total Library Visitors""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Median"",""Quartile"",""Range"",""Skewness"",""Kurtosis"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Levene Test"",""Mood Variance Test""]}",180
+"{""columns"":[""New Cardholders""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",181
+"{""columns"":[""Heart Rate""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",182
+"{""columns"":[""GDP""],""methods"":[""Range""]}",183
+"{""columns"":[""mileage(kmpl)""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",184
+"{""columns"":[""Total"",""Height_m""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Standard Deviation"",""Range"",""Quartile""]}",185
+"{""columns"":[""Japan"",""China""],""methods"":[""Kolmogorov-Smirnov Test""]}",186
+"{""columns"":[""Review #""],""methods"":[""Kurtosis""]}",187
+"{""columns"":[""adjusted_satisfaction"",""std_satisfaction""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",188
+"{""columns"":[""MAR""],""methods"":[""Median""]}",189
+"{""columns"":[""higher"",""internet""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",190
+"{""columns"":[""Pakistan"",""China"",""Year""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",191
+"{""columns"":[""paid"",""nursery"",""sex""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",192
+"{""columns"":[""experience_level"",""company_size""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",193
+"{""columns"":[""Sex"",""Transportation""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",194
+"{""columns"":[""writing score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis""]}",195
+"{""columns"":[""age""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",196
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",197
+"{""columns"":[""Number of Ratings"",""Rating""],""methods"":[""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",198
+"{""columns"":[""income_inequality""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",199
+"{""columns"":[""Vietnam"",""China""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",200
+"{""columns"":[""internet"",""romantic"",""sex""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",201
+"{""columns"":[""Age"",""Balance""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",202
+"{""columns"":[""heart_disease"",""work_type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",203
+"{""columns"":[""Number of trees sold"",""Sales"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",204
+"{""columns"":[""Myanmar"",""China""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",205
+"{""columns"":[""HP"",""Attack"",""Defense"",""Sp_Atk"",""Sp_Def"",""Speed""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",206
+"{""columns"":[""freetime"",""Walc""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",207
+"{""columns"":[""Research Environment Score""],""methods"":[""Skewness""]}",208
+"{""columns"":[""Review""],""methods"":[""Mean""]}",209
+"{""columns"":[""SHORTNESS OF BREATH"",""LUNG_CANCER"",""ALLERGY ""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",210
+"{""columns"":[""CHRONIC DISEASE"",""SHORTNESS OF BREATH"",""YELLOW_FINGERS""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",211
+"{""columns"":[""adjusted_satisfaction"",""happyScore""],""methods"":[""Standard Deviation"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",212
+"{""columns"":[""absences""],""methods"":[""Standard Deviation""]}",213
+"{""columns"":[""activities"",""higher"",""address""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",214
+"{""columns"":[""Japan""],""methods"":[""Quartile""]}",215
+"{""columns"":[""Nigeria"",""Myanmar""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",216
+"{""columns"":[""ExerciseAngina"",""HeartDisease""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",217
+"{""columns"":[""PEER_PRESSURE"",""FATIGUE ""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",218
+"{""columns"":[""FCVC""],""methods"":[""Median""]}",219
+"{""columns"":[""Teenhome"",""NumStorePurchases""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",220
+"{""columns"":[""max_power(bhp)""],""methods"":[""Quartile"",""Range"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",221
+"{""columns"":[""Total"",""Weight_kg""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",222
+"{""columns"":[""Pr_Male""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",223
+"{""columns"":[""Attack method: Armed Assault""],""methods"":[""Quartile"",""Range"",""Median"",""Mean"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",224
+"{""columns"":[""Average Tree Price""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",225
+"{""columns"":[""age""],""methods"":[""Standard Deviation"",""Range""]}",226
+"{""columns"":[""Death Age : 11-20 ""],""methods"":[""Quartile""]}",227
+"{""columns"":[""Overall"",""Special""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",228
+"{""columns"":[""freetime"",""Walc""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",229
+"{""columns"":[""CHEST PAIN"",""LUNG_CANCER"",""WHEEZING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",230
+"{""columns"":[""Body Type"",""Real Face""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",231
+"{""columns"":[""International Outlook"",""Research Environment Score""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",232
+"{""columns"":[""goout""],""methods"":[""Mean""]}",233
+"{""columns"":[""North America""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",234
+"{""columns"":[""Pakistan"",""Indonesia""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",235
+"{""columns"":[""WHEEZING"",""COUGHING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",236
+"{""columns"":[""Total"",""HP""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",237
+"{""columns"":[""FastingBS"",""RestingECG""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",238
+"{""columns"":[""GRE Score"",""Chance of Admit ""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",239
+"{""columns"":[""type"",""age_certification""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",240
+"{""columns"":[""Price""],""methods"":[""Mean""]}",241
+"{""columns"":[""Death Age 100+""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",242
+"{""columns"":[""Terrorism deaths"",""Attack method: Hostage Taking (Kidnapping)""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",243
+"{""columns"":[""Terrorist Death Type : Killed"",""Attack method: Unarmed Assault"",""Attack method: Assassination""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",244
+"{""columns"":[""school"",""Fjob""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",245
+"{""columns"":[""Walc"",""G3"",""freetime""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",246
+"{""columns"":[""income_inequality"",""happyScore""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",247
+"{""columns"":[""Sales""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",248
+"{""columns"":[""AcceptedCmp4"",""Response""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",249
+"{""columns"":[""NumWebPurchases"",""MntMeatProducts"",""MntWines""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",250
+"{""columns"":[""DEC""],""methods"":[""Quartile""]}",251
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",252
+"{""columns"":[""AGE""],""methods"":[""Skewness""]}",253
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",254
+"{""columns"":[""Teenhome"",""MntFruits""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",255
+"{""columns"":[""Generation"",""Color""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",256
+"{""columns"":[""Gender"",""Education Level""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",257
+"{""columns"":[""Age"",""BMI""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",258
+"{""columns"":[""CHEST PAIN"",""LUNG_CANCER"",""ALCOHOL CONSUMING""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",259
+"{""columns"":[""CH2O""],""methods"":[""Kurtosis""]}",260
+"{""columns"":[""FAVC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",261
+"{""columns"":[""Mjob"",""guardian""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",262
+"{""columns"":[""age"",""Dalc""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",263
+"{""columns"":[""math score""],""methods"":[""Range""]}",264
+"{""columns"":[""median_income"",""GDP""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",265
+"{""columns"":[""Thailand"",""India"",""Year""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance""]}",266
+"{""columns"":[""school"",""famsup""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",267
+"{""columns"":[""CHRONIC DISEASE"",""LUNG_CANCER"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",268
+"{""columns"":[""ChestPainType"",""ExerciseAngina""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",269
+"{""columns"":[""Attack method: Hijacking"",""Death Age : 11-20 ""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test""]}",270
+"{""columns"":[""Exercise Intensity""],""methods"":[""Mode""]}",271
+"{""columns"":[""Age""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",272
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",273
+"{""columns"":[""Sp_Atk"",""Height_m""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",274
+"{""columns"":[""Terrorism deaths""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",275
+"{""columns"":[""Gender"",""SMOKE""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",276
+"{""columns"":[""nursery"",""address""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",277
+"{""columns"":[""North America""],""methods"":[""Standard Deviation""]}",278
+"{""columns"":[""famrel""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test""]}",279
+"{""columns"":[""Total Computer Usage (Wireless + PC Sessions)"",""# of Attendees at Children's and Teen Programming""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",280
+"{""columns"":[""Gender"",""MTRANS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",281
+"{""columns"":[""engine(cc)"",""price(in lakhs)""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",282
+"{""columns"":[""COUGHING"",""LUNG_CANCER"",""ANXIETY""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",283
+"{""columns"":[""adjusted_satisfaction"",""median_income""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",284
+"{""columns"":[""ChestPainType"",""HeartDisease""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",285
+"{""columns"":[""Japan"",""India"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",286
+"{""columns"":[""Sp_Atk"",""Sp_Def""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",287
+"{""columns"":[""school"",""nursery""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",288
+"{""columns"":[""Actual Weight"",""Duration""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",289
+"{""columns"":[""JUL"",""AUG""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",290
+"{""columns"":[""torque(Nm)""],""methods"":[""Skewness"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Quartile"",""Range"",""Kurtosis""]}",291
+"{""columns"":[""adjusted_satisfaction"",""avg_satisfaction""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",292
+"{""columns"":[""HP"",""Attack"",""Defense"",""Sp_Atk"",""Sp_Def"",""Speed"",""Pr_Male""],""methods"":[""Kolmogorov-Smirnov Test""]}",293
+"{""columns"":[""Age""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",294
+"{""columns"":[""Total Library Visitors""],""methods"":[""Standard Deviation""]}",295
+"{""columns"":[""Fjob"",""guardian""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",296
+"{""columns"":[""TV Ad Budget ($)""],""methods"":[""Mean""]}",297
+"{""columns"":[""Attack method: Hijacking""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",298
+"{""columns"":[""Age"",""Potential""],""methods"":[""Kolmogorov-Smirnov Test""]}",299
+"{""columns"":[""Student_Age""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",300
+"{""columns"":[""F2015""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",301
+"{""columns"":[""TOEFL Score"",""LOR ""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",302
+"{""columns"":[""heart_disease"",""work_type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",303
+"{""columns"":[""Terrorism deaths"",""Death Age : 11-20 "",""Terrorist attacks""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Pearson Correlation Coefficient"",""Kendall Correlation Coefficient""]}",304
+"{""columns"":[""United States"",""Philippines""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",305
+"{""columns"":[""Dalc"",""absences""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient"",""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Mode"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Anderson-Darling Test"",""Lilliefors Test""]}",306
+"{""columns"":[""CreditScore"",""NumOfProducts""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",307
+"{""columns"":[""Sales ($)"",""Newspaper Ad Budget ($)"",""Radio Ad Budget ($)""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",308
+"{""columns"":[""Year"",""Japan""],""methods"":[""Descriptive Statistics: Median""]}",309
+"{""columns"":[""ExerciseAngina"",""ChestPainType""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",310
+"{""columns"":[""Brazil"",""China"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation""]}",311
+"{""columns"":[""health""],""methods"":[""Skewness"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Quartile"",""Range"",""Kurtosis""]}",312
+"{""columns"":[""Attack method: Assassination""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",313
+"{""columns"":[""Age"",""NumOfProducts""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",314
+"{""columns"":[""Indonesia"",""India""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",315
+"{""columns"":[""PEER_PRESSURE"",""SHORTNESS OF BREATH"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",316
+"{""columns"":[""Age"",""MaxHR""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",317
+"{""columns"":[""AcceptedCmp2"",""Response""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",318
+"{""columns"":[""Terrorist Death Type : Killed""],""methods"":[""Descriptive Statistics: Skewness""]}",319
+"{""columns"":[""Residence_type"",""stroke"",""ever_married""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",320
+"{""columns"":[""age"",""Fedu""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",321
+"{""columns"":[""Nigeria"",""Vietnam"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",322
+"{""columns"":[""math score"",""writing score""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",323
+"{""columns"":[""price(in lakhs)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",324
+"{""columns"":[""Residence_type"",""stroke""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",325
+"{""columns"":[""PEER_PRESSURE"",""SMOKING"",""CHEST PAIN""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",326
+"{""columns"":[""Death Age: 51-99 ""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",327
+"{""columns"":[""Philippines"",""Indonesia""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",328
+"{""columns"":[""NumWebPurchases"",""NumStorePurchases""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics:Mode"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Distribution Compliance Test: Shapiro-Wilk Test of Normality"",""Distribution Compliance Test: Anderson-Darling Test"",""Distribution Compliance Test: Kolmogorov-Smirnov Test for Normality"",""Distribution Compliance Test: Lilliefors Test"",""Distribution Compliance Test: Kolmogorov-Smirnov Test""]}",329
+"{""columns"":[""Bedrooms""],""methods"":[""Quartile""]}",330
+"{""columns"":[""Total Program Attendees"",""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",331
+"{""columns"":[""Age"",""Height""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",332
+"{""columns"":[""farmprice""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",333
+"{""columns"":[""Attack method: Unarmed Assault""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",334
+"{""columns"":[""PEER_PRESSURE"",""CHRONIC DISEASE"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",335
+"{""columns"":[""math score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Skewness"",""Kurtosis""]}",336
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",337
+"{""columns"":[""smoking_status"",""stroke""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",338
+"{""columns"":[""Myanmar"",""Bangladesh""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",339
+"{""columns"":[""SWALLOWING DIFFICULTY"",""YELLOW_FINGERS"",""ANXIETY"",""PEER_PRESSURE"",""CHRONIC DISEASE"",""FATIGUE "",""ALLERGY "",""WHEEZING"",""COUGHING"",""SHORTNESS OF BREATH"",""CHEST PAIN""],""methods"":[""Mode""]}",340
+"{""columns"":[""F2021""],""methods"":[""Median""]}",341
+"{""columns"":[""adjusted_satisfaction""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis"",""Median"",""Quartile"",""Range"",""Standard Deviation"",""Mean""]}",342
+"{""columns"":[""Sex"",""ChestPainType""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",343
+"{""columns"":[""type"",""age_certification""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",344
+"{""columns"":[""Indonesia"",""Bangladesh""],""methods"":[""Anderson-Darling Test"",""Kolmogorov-Smirnov Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",345
+"{""columns"":[""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Descriptive Statistics: Skewness""]}",346
+"{""columns"":[""Europe""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",347
+"{""columns"":[""ChestPainType"",""HeartDisease""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",348
+"{""columns"":[""Weight""],""methods"":[""Skewness"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Kurtosis""]}",349
+"{""columns"":[""studytime"",""health""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",350
+"{""columns"":[""type"",""age_certification""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",351
+"{""columns"":[""NumWebVisitsMonth""],""methods"":[""Descriptive Statistics: Kurtosis""]}",352
+"{""columns"":[""work_year""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",353
+"{""columns"":[""AGE""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",354
+"{""columns"":[""Total"",""HP""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",355
+"{""columns"":[""Total Computer Usage (Wireless + PC Sessions)"",""New Cardholders"",""Total eMedia Circulation""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",356
+"{""columns"":[""ALLERGY "",""SHORTNESS OF BREATH""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",357
+"{""columns"":[""CHRONIC DISEASE"",""WHEEZING"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",358
+"{""columns"":[""Hour""],""methods"":[""Standard Deviation""]}",359
+"{""columns"":[""Terrorist Death Type : Suicide""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",360
+"{""columns"":[""age"",""bmi""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: F-Test for Variance"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test""]}",361
+"{""columns"":[""Death Age: 51-99 "",""Terrorist Death Type : Suicide"",""Terrorist attacks""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""Pearson Correlation Coefficient""]}",362
+"{""columns"":[""Speed"",""Height_m""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",363
+"{""columns"":[""Age"",""CH2O""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",364
+"{""columns"":[""G3"",""absences"",""Dalc""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",365
+"{""columns"":[""Pstatus"",""higher"",""famsize""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",366
+"{""columns"":[""Sp_Def"",""Height_m""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",367
+"{""columns"":[""gpa""],""methods"":[""Range""]}",368
+"{""columns"":[""salary_in_usd""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",369
+"{""columns"":[""GDP""],""methods"":[""Standard Deviation""]}",370
+"{""columns"":[""adjusted_satisfaction""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile""]}",371
+"{""columns"":[""Teaching Score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",372
+"{""columns"":[""Total eMedia Circulation""],""methods"":[""Median""]}",373
+"{""columns"":[""Overall"",""Height""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",374
+"{""columns"":[""price(in lakhs)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",375
+"{""columns"":[""Dalc""],""methods"":[""Skewness"",""Mean"",""Median"",""Mode"",""Quartile"",""Standard Deviation"",""Range"",""Kurtosis""]}",376
+"{""columns"":[""Chance of Admit ""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",377
+"{""columns"":[""NumCatalogPurchases"",""MntFruits"",""NumDealsPurchases""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",378
+"{""columns"":[""Value"",""Release Clause""],""methods"":[""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",379
+"{""columns"":[""Research Quality Score"",""Teaching Score""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",380
+"{""columns"":[""Weight_kg""],""methods"":[""Descriptive Statistics: Median""]}",381
+"{""columns"":[""Gender"",""MTRANS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",382
+"{""columns"":[""Weight"",""FCVC""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",383
+"{""columns"":[""CHRONIC DISEASE"",""SWALLOWING DIFFICULTY"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",384
+"{""columns"":[""FAVC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",385
+"{""columns"":[""CGPA""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",386
+"{""columns"":[""Thailand"",""India""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",387
+"{""columns"":[""Value"",""Release Clause""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",388
+"{""columns"":[""India""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",389
+"{""columns"":[""Bangladesh"",""Year""],""methods"":[""Standard Deviation""]}",390
+"{""columns"":[""Education"",""Response""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",391
+"{""columns"":[""avg_glucose_level"",""bmi""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",392
+"{""columns"":[""runtime""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",393
+"{""columns"":[""studytime"",""Dalc""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",394
+"{""columns"":[""SquareFeet""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",395
+"{""columns"":[""Myanmar""],""methods"":[""Standard Deviation""]}",396
+"{""columns"":[""CreditScore""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",397
+"{""columns"":[""internet"",""romantic"",""Pstatus""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",398
+"{""columns"":[""Terrorist attacks""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",399
+"{""columns"":[""MntSweetProducts""],""methods"":[""Range"",""Mean"",""Median"",""Mode"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",400
+"{""columns"":[""ALCOHOL CONSUMING"",""CHEST PAIN"",""FATIGUE ""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",401
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",402
+"{""columns"":[""NumCatalogPurchases"",""MntFishProducts"",""MntSweetProducts""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",403
+"{""columns"":[""RestingBP""],""methods"":[""Skewness"",""Mean"",""Median"",""Mode"",""Quartile"",""Standard Deviation"",""Range"",""Kurtosis""]}",404
+"{""columns"":[""Height_m""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",405
+"{""columns"":[""family_history_with_overweight"",""CAEC""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",406
+"{""columns"":[""ALCOHOL CONSUMING"",""COUGHING"",""SMOKING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",407
+"{""columns"":[""Vietnam"",""Indonesia"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",408
+"{""columns"":[""MntFishProducts"",""NumStorePurchases"",""Recency""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",409
+"{""columns"":[""CH2O"",""TUE"",""FCVC""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",410
+"{""columns"":[""Year"",""Thailand""],""methods"":[""Range""]}",411
+"{""columns"":[""family_history_with_overweight"",""CAEC""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",412
+"{""columns"":[""Rest of World""],""methods"":[""Median""]}",413
+"{""columns"":[""Brazil""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",414
+"{""columns"":[""NObeyesdad"",""SCC""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",415
+"{""columns"":[""SMOKE"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",416
+"{""columns"":[""Attack method: Unarmed Assault""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",417
+"{""columns"":[""Pakistan"",""Indonesia"",""Year""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",418
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",419
+"{""columns"":[""Dalc"",""goout"",""freetime""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",420
+"{""columns"":[""MntSweetProducts"",""NumCatalogPurchases""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",421
+"{""columns"":[""FAVC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",422
+"{""columns"":[""TOEFL Score"",""SOP""],""methods"":[""Kolmogorov-Smirnov Test"",""Mann-Whitney U Test""]}",423
+"{""columns"":[""Attack method: Bombing/Explosion""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",424
+"{""columns"":[""goout"",""Dalc"",""traveltime""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",425
+"{""columns"":[""United States"",""Myanmar""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",426
+"{""columns"":[""F2010""],""methods"":[""Standard Deviation""]}",427
+"{""columns"":[""freetime"",""health""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: F-Test for Variance"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test""]}",428
+"{""columns"":[""SquareFeet""],""methods"":[""Median""]}",429
+"{""columns"":[""Dream Weight"",""Duration""],""methods"":[""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",430
+"{""columns"":[""kms_driven"",""engine(cc)""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Standard Deviation"",""Range"",""Quartile"",""Skewness"",""Kurtosis""]}",431
+"{""columns"":[""DEC""],""methods"":[""Range""]}",432
+"{""columns"":[""freetime""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",433
+"{""columns"":[""Age"",""NCP""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",434
+"{""columns"":[""SquareFeet"",""Bathrooms""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",435
+"{""columns"":[""SOP""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",436
+"{""columns"":[""SEP""],""methods"":[""Descriptive Statistics: Kurtosis""]}",437
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",438
+"{""columns"":[""Total Program Attendees"",""Total Cardholders"",""Total Library Visitors""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",439
+"{""columns"":[""Bangladesh"",""India"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",440
+"{""columns"":[""Age""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",441
+"{""columns"":[""CAEC"",""family_history_with_overweight""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",442
+"{""columns"":[""North America""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile""]}",443
+"{""columns"":[""Nigeria"",""China""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",444
+"{""columns"":[""Philippines"",""Vietnam"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Standard Deviation"",""Range"",""Quartile""]}",445
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",446
+"{""columns"":[""age"",""famrel""],""methods"":[""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",447
+"{""columns"":[""Recency"",""Kidhome"",""Income""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",448
+"{""columns"":[""Pstatus"",""nursery"",""address""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",449
+"{""columns"":[""writing score""],""methods"":[""Quartile""]}",450
+"{""columns"":[""Death Age : 21-50 "",""Attack method: Assassination"",""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Partial Correlation Coefficient""]}",451
+"{""columns"":[""Recency""],""methods"":[""Quartile""]}",452
+"{""columns"":[""avg_satisfaction""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",453
+"{""columns"":[""Hour""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",454
+"{""columns"":[""Terrorist Death Type : Suicide""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",455
+"{""columns"":[""Indonesia"",""Bangladesh"",""Year""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: F-Test for Variance"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test""]}",456
+"{""columns"":[""Attack method: Hostage Taking (Barricade Incident)"",""Death Age : 6-10 ""],""methods"":[""Kolmogorov-Smirnov Test""]}",457
+"{""columns"":[""SOP""],""methods"":[""Range""]}",458
+"{""columns"":[""Preferred Foot"",""Body Type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",459
+"{""columns"":[""heart_disease"",""work_type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",460
+"{""columns"":[""Average Tree Price""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",461
+"{""columns"":[""Age"",""Overall""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",462
+"{""columns"":[""Age""],""methods"":[""Quartile""]}",463
+"{""columns"":[""math score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",464
+"{""columns"":[""reason"",""higher""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",465
+"{""columns"":[""MntWines""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",466
+"{""columns"":[""WHEEZING"",""CHEST PAIN"",""ANXIETY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",467
+"{""columns"":[""Wage"",""Age"",""Potential""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",468
+"{""columns"":[""MntFruits"",""Z_Revenue""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",469
+"{""columns"":[""F2019""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",470
+"{""columns"":[""mileage(kmpl)"",""torque(Nm)""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",471
+"{""columns"":[""Vietnam"",""India"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",472
+"{""columns"":[""Actual Weight"",""BMI""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",473
+"{""columns"":[""SMOKE"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",474
+"{""columns"":[""math score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",475
+"{""columns"":[""Kidhome"",""Teenhome"",""NumDealsPurchases""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",476
+"{""columns"":[""Terrorist Death Type : Suicide""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",477
+"{""columns"":[""Total"",""Attack""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",478
+"{""columns"":[""Number of Ratings""],""methods"":[""Kurtosis""]}",479
+"{""columns"":[""GENDER"",""PEER_PRESSURE"",""SMOKING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",480
+"{""columns"":[""Pstatus"",""activities""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",481
+"{""columns"":[""Weight"",""Release Clause""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: F-Test for Variance"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test""]}",482
+"{""columns"":[""Gender"",""MTRANS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",483
+"{""columns"":[""SWALLOWING DIFFICULTY"",""CHEST PAIN""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",484
+"{""columns"":[""Calories Burn"",""Heart Rate""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",485
+"{""columns"":[""Geography"",""Exited""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",486
+"{""columns"":[""std_satisfaction"",""median_income""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",487
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",488
+"{""columns"":[""Medu"",""G1""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",489
+"{""columns"":[""kms_driven"",""mileage(kmpl)""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",490
+"{""columns"":[""Death Age : 11-20 ""],""methods"":[""Range""]}",491
+"{""columns"":[""Recency"",""MntFruits""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",492
+"{""columns"":[""Nigeria"",""India"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Lilliefors Test""]}",493
+"{""columns"":[""WHEEZING"",""SHORTNESS OF BREATH"",""ANXIETY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",494
+"{""columns"":[""Total Library Visitors"",""# of Homeless Individuals Served at The Source""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",495
+"{""columns"":[""atlantaretail""],""methods"":[""Kurtosis""]}",496
+"{""columns"":[""Newspaper Ad Budget ($)""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",497
+"{""columns"":[""Cholesterol""],""methods"":[""Median""]}",498
+"{""columns"":[""LOR ""],""methods"":[""Kurtosis""]}",499
+"{""columns"":[""NCP"",""CH2O""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",500
+"{""columns"":[""RestingBP"",""Cholesterol""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",501
+"{""columns"":[""traveltime"",""G3"",""age""],""methods"":[""Partial Correlation Coefficient""]}",502
+"{""columns"":[""Death Age 100+""],""methods"":[""Skewness""]}",503
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",504
+"{""columns"":[""Pakistan"",""Myanmar"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",505
+"{""columns"":[""Age""],""methods"":[""Standard Deviation""]}",506
+"{""columns"":[""Total eMedia Circulation""],""methods"":[""Quartile""]}",507
+"{""columns"":[""goout""],""methods"":[""Standard Deviation""]}",508
+"{""columns"":[""Recency"",""Z_Revenue""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",509
+"{""columns"":[""ALCOHOL CONSUMING"",""LUNG_CANCER"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",510
+"{""columns"":[""North America"",""Japan""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",511
+"{""columns"":[""median_income""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile"",""Range""]}",512
+"{""columns"":[""Y house price of unit area""],""methods"":[""Range""]}",513
+"{""columns"":[""reason"",""internet""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",514
+"{""columns"":[""ALLERGY "",""WHEEZING"",""ANXIETY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",515
+"{""columns"":[""CGPA""],""methods"":[""Descriptive Statistics: Median""]}",516
+"{""columns"":[""Thailand"",""Bangladesh""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",517
+"{""columns"":[""HP"",""Attack"",""Defense"",""Sp_Atk"",""Sp_Def"",""Speed"",""Total""],""methods"":[""Range""]}",518
+"{""columns"":[""ever_married"",""smoking_status""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",519
+"{""columns"":[""FAVC""],""methods"":[""Mode""]}",520
+"{""columns"":[""PEER_PRESSURE"",""CHRONIC DISEASE""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",521
+"{""columns"":[""Potential"",""Special""],""methods"":[""Descriptive Statistics"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",522
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",523
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",524
+"{""columns"":[""Dream Weight"",""BMI""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",525
+"{""columns"":[""avg_income"",""GDP""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",526
+"{""columns"":[""Fedu"",""Walc""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",527
+"{""columns"":[""std_satisfaction"",""income_inequality""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",528
+"{""columns"":[""Work Rate"",""Preferred Foot""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",529
+"{""columns"":[""ALCOHOL CONSUMING"",""ALLERGY "",""ANXIETY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",530
+"{""columns"":[""Research Quality Score"",""International Outlook""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",531
+"{""columns"":[""CGPA""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",532
+"{""columns"":[""higher"",""reason""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",533
+"{""columns"":[""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Median""]}",534
+"{""columns"":[""Income"",""Z_CostContact""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",535
+"{""columns"":[""Terrorist Death Type : Killed"",""Terrorist attacks"",""Attack method: Hijacking""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",536
+"{""columns"":[""school"",""reason"",""internet""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",537
+"{""columns"":[""Pakistan"",""Bangladesh""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",538
+"{""columns"":[""ALLERGY "",""SHORTNESS OF BREATH""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",539
+"{""columns"":[""MntSweetProducts""],""methods"":[""Median""]}",540
+"{""columns"":[""nursery"",""internet"",""famsize""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",541
+"{""columns"":[""Nigeria"",""Myanmar"",""Year""],""methods"":[""Mean"",""Median"",""Range"",""Standard Deviation"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",542
+"{""columns"":[""Nationality""],""methods"":[""Mode""]}",543
+"{""columns"":[""Industry Score"",""International Outlook""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",544
+"{""columns"":[""AUG"",""ANU""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",545
+"{""columns"":[""Speed""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",546
+"{""columns"":[""Special"",""Height""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Standard Deviation"",""Range"",""Quartile""]}",547
+"{""columns"":[""FATIGUE "",""SHORTNESS OF BREATH"",""SMOKING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",548
+"{""columns"":[""Brazil"",""Indonesia"",""Year""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",549
+"{""columns"":[""Sales""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",550
+"{""columns"":[""AUG"",""ANU"",""JUL""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",551
+"{""columns"":[""CS-301""],""methods"":[""Descriptive Statistics: Mode""]}",552
+"{""columns"":[""Overall"",""Release Clause""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",553
+"{""columns"":[""Brazil"",""India"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",554
+"{""columns"":[""Special"",""Overall"",""Value""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",555
+"{""columns"":[""activities"",""internet"",""famsup""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",556
+"{""columns"":[""JUL""],""methods"":[""Kurtosis""]}",557
+"{""columns"":[""Sports_activity"",""Reading"",""Sex""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",558
+"{""columns"":[""SHORTNESS OF BREATH"",""LUNG_CANCER"",""COUGHING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",559
+"{""columns"":[""mileage(kmpl)"",""engine(cc)""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",560
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",561
+"{""columns"":[""Duration"",""Heart Rate""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",562
+"{""columns"":[""Sales"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",563
+"{""columns"":[""University Rating"",""Research""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",564
+"{""columns"":[""avg_income""],""methods"":[""Mean""]}",565
+"{""columns"":[""avg_income"",""median_income""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",566
+"{""columns"":[""JAN""],""methods"":[""Mean""]}",567
+"{""columns"":[""work_type"",""hypertension""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",568
+"{""columns"":[""Attack method: Armed Assault""],""methods"":[""Mean""]}",569
+"{""columns"":[""EE-119""],""methods"":[""Descriptive Statistics: Mode""]}",570
+"{""columns"":[""work_year""],""methods"":[""Median""]}",571
+"{""columns"":[""Total"",""Defense""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",572
+"{""columns"":[""United States"",""Brazil""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",573
+"{""columns"":[""Education Level""],""methods"":[""Mode""]}",574
+"{""columns"":[""famsup"",""nursery"",""sex""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",575
+"{""columns"":[""GRE Score"",""SOP""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",576
+"{""columns"":[""SMOKING"",""ALCOHOL CONSUMING"",""GENDER""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",577
+"{""columns"":[""ANXIETY"",""CHRONIC DISEASE"",""SMOKING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",578
+"{""columns"":[""famsup"",""internet"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",579
+"{""columns"":[""Type of tree""],""methods"":[""Mode""]}",580
+"{""columns"":[""parental level of education""],""methods"":[""Mode""]}",581
+"{""columns"":[""Height_m"",""Pr_Male"",""Sp_Def"",""hasGender""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Pearson Correlation Coefficient"",""Kendall Correlation Coefficient""]}",582
+"{""columns"":[""NumStorePurchases"",""Z_CostContact""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",583
+"{""columns"":[""Nigeria"",""Brazil"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Standard Deviation"",""Range"",""Quartile""]}",584
+"{""columns"":[""Heart Rate"",""BMI""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",585
+"{""columns"":[""Overall""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test"",""Variance Test: F-Test for Variance""]}",586
+"{""columns"":[""India"",""China""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",587
+"{""columns"":[""farmprice""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",588
+"{""columns"":[""absences""],""methods"":[""Median""]}",589
+"{""columns"":[""Pakistan"",""China""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",590
+"{""columns"":[""Japan"",""India"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",591
+"{""columns"":[""Fedu""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",592
+"{""columns"":[""Indonesia"",""Bangladesh"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",593
+"{""columns"":[""Overall"",""Release Clause""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",594
+"{""columns"":[""work_type"",""smoking_status""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",595
+"{""columns"":[""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Standard Deviation""]}",596
+"{""columns"":[""Japan""],""methods"":[""Standard Deviation""]}",597
+"{""columns"":[""hasGender"",""isLegendary""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",598
+"{""columns"":[""APR""],""methods"":[""Standard Deviation""]}",599
+"{""columns"":[""torque(Nm)""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",600
+"{""columns"":[""MntSweetProducts""],""methods"":[""Descriptive Statistics: Range""]}",601
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",602
+"{""columns"":[""Duration""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",603
+"{""columns"":[""Total Library Visitors""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",604
+"{""columns"":[""family_history_with_overweight"",""FAVC""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",605
+"{""columns"":[""Real Face"",""Body Type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",606
+"{""columns"":[""Wage"",""Release Clause""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",607
+"{""columns"":[""Oldpeak""],""methods"":[""Range""]}",608
+"{""columns"":[""Research Quality Score"",""Teaching Score""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",609
+"{""columns"":[""math score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",610
+"{""columns"":[""Fedu""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",611
+"{""columns"":[""ALCOHOL CONSUMING"",""LUNG_CANCER"",""CHRONIC DISEASE""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",612
+"{""columns"":[""SHORTNESS OF BREATH"",""CHEST PAIN"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",613
+"{""columns"":[""APR""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",614
+"{""columns"":[""internet"",""romantic"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",615
+"{""columns"":[""bmi""],""methods"":[""Descriptive Statistics: Kurtosis"",""Descriptive Statistics: Skewness""]}",616
+"{""columns"":[""avg_satisfaction"",""median_income""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",617
+"{""columns"":[""Death Age : 21-50 ""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",618
+"{""columns"":[""price(in lakhs)""],""methods"":[""Range""]}",619
+"{""columns"":[""Nigeria"",""Year""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",620
+"{""columns"":[""Research Environment Score"",""International Outlook"",""Research Quality Score""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",621
+"{""columns"":[""Overall"",""Height""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",622
+"{""columns"":[""ANU""],""methods"":[""Quartile""]}",623
+"{""columns"":[""FAVC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",624
+"{""columns"":[""runtime"",""imdb_votes""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",625
+"{""columns"":[""mileage(kmpl)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",626
+"{""columns"":[""MaxHR""],""methods"":[""Mean""]}",627
+"{""columns"":[""Review #""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",628
+"{""columns"":[""Defense"",""Catch_Rate""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",629
+"{""columns"":[""Pstatus"",""guardian""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",630
+"{""columns"":[""smoking_status"",""stroke""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",631
+"{""columns"":[""Recency""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",632
+"{""columns"":[""GRE Score""],""methods"":[""Quartile""]}",633
+"{""columns"":[""Kidhome"",""Teenhome"",""NumWebPurchases""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",634
+"{""columns"":[""Walc""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",635
+"{""columns"":[""WHEEZING"",""CHEST PAIN"",""ALLERGY ""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",636
+"{""columns"":[""NumWebVisitsMonth"",""MntFruits"",""NumDealsPurchases""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",637
+"{""columns"":[""Height"",""CH2O""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",638
+"{""columns"":[""ALLERGY ""],""methods"":[""Mode""]}",639
+"{""columns"":[""Research Quality Score""],""methods"":[""Quartile""]}",640
+"{""columns"":[""Nigeria"",""Bangladesh""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",641
+"{""columns"":[""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",642
+"{""columns"":[""GENDER"",""SWALLOWING DIFFICULTY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",643
+"{""columns"":[""JAN""],""methods"":[""Range""]}",644
+"{""columns"":[""CH2O""],""methods"":[""Quartile""]}",645
+"{""columns"":[""Review"",""North America"",""Rank""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",646
+"{""columns"":[""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",647
+"{""columns"":[""PEER_PRESSURE"",""SWALLOWING DIFFICULTY"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",648
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",649
+"{""columns"":[""Calories Burn"",""Heart Rate""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",650
+"{""columns"":[""activities"",""nursery"",""famsize""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",651
+"{""columns"":[""NumCatalogPurchases""],""methods"":[""Descriptive Statistics"",""Standard Deviation""]}",652
+"{""columns"":[""experience_level"",""company_size""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",653
+"{""columns"":[""losangelesretail"",""newyorkretail""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",654
+"{""columns"":[""Philippines"",""China"",""Year""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: F-Test for Variance"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test""]}",655
+"{""columns"":[""Attack method: Facility/Infrastructure Attack""],""methods"":[""Median""]}",656
+"{""columns"":[""chicagoretail""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",657
+"{""columns"":[""SMOKE"",""SCC""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",658
+"{""columns"":[""G1""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",659
+"{""columns"":[""Terrorism deaths""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",660
+"{""columns"":[""Mjob"",""guardian""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",661
+"{""columns"":[""AUG""],""methods"":[""Standard Deviation""]}",662
+"{""columns"":[""Medu""],""methods"":[""Descriptive Statistics: Median""]}",663
+"{""columns"":[""absences"",""freetime"",""goout""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",664
+"{""columns"":[""Sp_Def""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",665
+"{""columns"":[""ANXIETY"",""SWALLOWING DIFFICULTY"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",666
+"{""columns"":[""famsup"",""paid"",""schoolsup""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",667
+"{""columns"":[""F2019""],""methods"":[""Descriptive Statistics: Median""]}",668
+"{""columns"":[""happyScore"",""GDP""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",669
+"{""columns"":[""Terrorism deaths""],""methods"":[""Range""]}",670
+"{""columns"":[""PH-121""],""methods"":[""Mode""]}",671
+"{""columns"":[""CHRONIC DISEASE"",""LUNG_CANCER"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",672
+"{""columns"":[""Vietnam"",""Bangladesh""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",673
+"{""columns"":[""Overall""],""methods"":[""Quartile""]}",674
+"{""columns"":[""Year"",""China""],""methods"":[""Median""]}",675
+"{""columns"":[""COUGHING"",""SWALLOWING DIFFICULTY"",""SMOKING""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",676
+"{""columns"":[""nursery"",""romantic"",""schoolsup""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",677
+"{""columns"":[""Height_m""],""methods"":[""Standard Deviation""]}",678
+"{""columns"":[""F2020""],""methods"":[""Mean""]}",679
+"{""columns"":[""school"",""Mjob""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",680
+"{""columns"":[""Calories Burn"",""Dream Weight""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",681
+"{""columns"":[""G2"",""absences"",""famrel""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",682
+"{""columns"":[""Tenure""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation""]}",683
+"{""columns"":[""Actual Weight"",""Age""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",684
+"{""columns"":[""New Cardholders"",""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",685
+"{""columns"":[""math score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",686
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",687
+"{""columns"":[""Hours Viewed""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile""]}",688
+"{""columns"":[""Overall"",""Release Clause""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",689
+"{""columns"":[""LOR "",""CGPA""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",690
+"{""columns"":[""CH2O""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",691
+"{""columns"":[""work_year"",""salary""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",692
+"{""columns"":[""F2016""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",693
+"{""columns"":[""Height"",""Weight""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",694
+"{""columns"":[""mileage(kmpl)"",""max_power(bhp)""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",695
+"{""columns"":[""Defense""],""methods"":[""Median""]}",696
+"{""columns"":[""New Cardholders""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",697
+"{""columns"":[""Age"",""Release Clause""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",698
+"{""columns"":[""G2"",""Medu"",""health""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",699
+"{""columns"":[""AGE""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",700
+"{""columns"":[""Age"",""Weight""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",701
+"{""columns"":[""Teenhome""],""methods"":[""Quartile"",""Range"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",702
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",703
+"{""columns"":[""Sp_Def"",""Speed""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",704
+"{""columns"":[""ChestPainType"",""ST_Slope""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",705
+"{""columns"":[""Nigeria"",""Indonesia"",""Year""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",706
+"{""columns"":[""MAY"",""AUG""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",707
+"{""columns"":[""FCVC""],""methods"":[""Median""]}",708
+"{""columns"":[""Sex"",""ExerciseAngina""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",709
+"{""columns"":[""Student_Age""],""methods"":[""Skewness""]}",710
+"{""columns"":[""Attack method: Facility/Infrastructure Attack""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",711
+"{""columns"":[""Pakistan"",""India"",""Year""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",712
+"{""columns"":[""SOP"",""LOR ""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Lilliefors Test""]}",713
+"{""columns"":[""Attack method: Armed Assault"",""Attack method: Bombing/Explosion""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",714
+"{""columns"":[""avg_income"",""median_income""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Skewness"",""Kurtosis""]}",715
+"{""columns"":[""engine(cc)"",""max_power(bhp)""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",716
+"{""columns"":[""Weight""],""methods"":[""Kurtosis""]}",717
+"{""columns"":[""ANXIETY"",""SWALLOWING DIFFICULTY"",""SMOKING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",718
+"{""columns"":[""Fedu""],""methods"":[""Range""]}",719
+"{""columns"":[""ever_married"",""work_type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",720
+"{""columns"":[""Speed"",""Weight_kg"",""Total""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",721
+"{""columns"":[""Philippines"",""Myanmar""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",722
+"{""columns"":[""JAN""],""methods"":[""Standard Deviation""]}",723
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",724
+"{""columns"":[""SCC"",""SMOKE""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",725
+"{""columns"":[""Age"",""NCP""],""methods"":[""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test"",""Variance Test: F-Test for Variance""]}",726
+"{""columns"":[""Walc""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",727
+"{""columns"":[""CHRONIC DISEASE"",""ALLERGY ""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",728
+"{""columns"":[""writing score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",729
+"{""columns"":[""Dream Weight""],""methods"":[""Median""]}",730
+"{""columns"":[""math score"",""writing score""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",731
+"{""columns"":[""Walc""],""methods"":[""Quartile"",""Range"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",732
+"{""columns"":[""studytime"",""G1""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",733
+"{""columns"":[""Japan"",""Indonesia""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",734
+"{""columns"":[""avg_glucose_level"",""bmi""],""methods"":[""Kolmogorov-Smirnov Test""]}",735
+"{""columns"":[""avg_income"",""median_income""],""methods"":[""Kolmogorov-Smirnov Test""]}",736
+"{""columns"":[""Teaching Score""],""methods"":[""Skewness""]}",737
+"{""columns"":[""Tenure"",""Exited"",""Geography""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",738
+"{""columns"":[""YELLOW_FINGERS"",""LUNG_CANCER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",739
+"{""columns"":[""Gender"",""MTRANS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",740
+"{""columns"":[""Total eMedia Circulation"",""# of Homeless Individuals Served at The Source""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",741
+"{""columns"":[""NumWebPurchases"",""NumCatalogPurchases"",""NumDealsPurchases""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",742
+"{""columns"":[""Myanmar"",""China"",""Year""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",743
+"{""columns"":[""Rest of World""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile"",""Range""]}",744
+"{""columns"":[""Vietnam"",""Year""],""methods"":[""Standard Deviation""]}",745
+"{""columns"":[""# of Homeless Individuals Served at The Source"",""Total Library Visitors"",""Total Cardholders""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",746
+"{""columns"":[""Research Quality Score""],""methods"":[""Kurtosis""]}",747
+"{""columns"":[""Pr_Male""],""methods"":[""Mean""]}",748
+"{""columns"":[""Death Age 100+"",""Attack method: Armed Assault"",""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",749
+"{""columns"":[""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",750
+"{""columns"":[""GRE Score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile"",""Range""]}",751
+"{""columns"":[""Total eMedia Circulation"",""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",752
+"{""columns"":[""Attack method: Armed Assault"",""Attack method: Facility/Infrastructure Attack"",""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",753
+"{""columns"":[""ALLERGY "",""SWALLOWING DIFFICULTY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",754
+"{""columns"":[""Duration""],""methods"":[""Quartile""]}",755
+"{""columns"":[""ever_married"",""work_type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",756
+"{""columns"":[""Bangladesh""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",757
+"{""columns"":[""Philippines"",""India""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",758
+"{""columns"":[""Terrorism deaths"",""Death Age : 6-10""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test""]}",759
+"{""columns"":[""MntWines"",""MntFishProducts""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",760
+"{""columns"":[""Terrorist Death Type : Suicide"",""Attack method: Bombing/Explosion"",""Attack method: Assassination""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",761
+"{""columns"":[""famsize"",""higher"",""sex""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",762
+"{""columns"":[""price(in lakhs)"",""mileage(kmpl)"",""torque(Nm)""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",763
+"{""columns"":[""Japan"",""Year""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",764
+"{""columns"":[""freetime"",""health""],""methods"":[""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",765
+"{""columns"":[""Height""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",766
+"{""columns"":[""Year"",""Pakistan""],""methods"":[""Mean""]}",767
+"{""columns"":[""hypertension"",""smoking_status""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",768
+"{""columns"":[""atlantaretail""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",769
+"{""columns"":[""NumDealsPurchases""],""methods"":[""Descriptive Statistics: Quartile""]}",770
+"{""columns"":[""SHORTNESS OF BREATH"",""CHEST PAIN"",""YELLOW_FINGERS""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",771
+"{""columns"":[""Total Program Attendees"",""# of Homeless Individuals Served at The Source""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",772
+"{""columns"":[""Geography"",""Exited""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",773
+"{""columns"":[""HP""],""methods"":[""Skewness""]}",774
+"{""columns"":[""avg_income"",""GDP""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",775
+"{""columns"":[""runtime"",""imdb_votes""],""methods"":[""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",776
+"{""columns"":[""Total eMedia Circulation""],""methods"":[""Median""]}",777
+"{""columns"":[""JUL""],""methods"":[""Standard Deviation""]}",778
+"{""columns"":[""TOEFL Score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",779
+"{""columns"":[""Age"",""BMI""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",780
+"{""columns"":[""Japan""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",781
+"{""columns"":[""Bathrooms""],""methods"":[""Kurtosis""]}",782
+"{""columns"":[""region""],""methods"":[""Mode""]}",783
+"{""columns"":[""NumStorePurchases""],""methods"":[""Standard Deviation""]}",784
+"{""columns"":[""Average Tree Price""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",785
+"{""columns"":[""Gender"",""SMOKE""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",786
+"{""columns"":[""WHEEZING"",""LUNG_CANCER"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",787
+"{""columns"":[""Newspaper Ad Budget ($)""],""methods"":[""Mean""]}",788
+"{""columns"":[""nursery"",""internet"",""paid""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",789
+"{""columns"":[""Philippines"",""Year""],""methods"":[""Quartile""]}",790
+"{""columns"":[""work_year"",""salary""],""methods"":[""Range""]}",791
+"{""columns"":[""SOP""],""methods"":[""Standard Deviation""]}",792
+"{""columns"":[""Real Face""],""methods"":[""Mode""]}",793
+"{""columns"":[""Speed""],""methods"":[""Kurtosis""]}",794
+"{""columns"":[""avg_glucose_level"",""bmi""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Standard Deviation"",""Range"",""Quartile""]}",795
+"{""columns"":[""Pr_Male""],""methods"":[""Quartile""]}",796
+"{""columns"":[""GRE Score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",797
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",798
+"{""columns"":[""adjusted_satisfaction""],""methods"":[""Skewness""]}",799
+"{""columns"":[""Japan""],""methods"":[""Skewness"",""Kurtosis""]}",800
+"{""columns"":[""SMOKING"",""CHEST PAIN"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",801
+"{""columns"":[""MaxHR""],""methods"":[""Median""]}",802
+"{""columns"":[""Total eMedia Circulation"",""Total Computer Usage (Wireless + PC Sessions)""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",803
+"{""columns"":[""guardian"",""higher""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",804
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",805
+"{""columns"":[""age"",""traveltime""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",806
+"{""columns"":[""ever_married"",""stroke""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",807
+"{""columns"":[""freetime""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",808
+"{""columns"":[""Preferred Foot"",""Body Type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",809
+"{""columns"":[""TV Ad Budget ($)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",810
+"{""columns"":[""ST_Slope"",""ChestPainType""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",811
+"{""columns"":[""Sex"",""Grade""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",812
+"{""columns"":[""Sports_activity"",""Project_work"",""Additional_Work""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",813
+"{""columns"":[""NumDealsPurchases""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Descriptive Statistics""]}",814
+"{""columns"":[""Work Rate"",""Real Face""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",815
+"{""columns"":[""Total eMedia Circulation"",""# of Attendees at Children's and Teen Programming""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",816
+"{""columns"":[""MntWines""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",817
+"{""columns"":[""Attack method: Armed Assault"",""Death Age 100+"",""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",818
+"{""columns"":[""age"",""G1""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",819
+"{""columns"":[""age"",""avg_glucose_level""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",820
+"{""columns"":[""United States"",""Indonesia""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",821
+"{""columns"":[""imdb_score"",""imdb_votes""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",822
+"{""columns"":[""Year"",""Terrorism deaths"",""Attack method: Assassination""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""Pearson Correlation Coefficient""]}",823
+"{""columns"":[""Number of trees sold"",""Average Tree Price"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",824
+"{""columns"":[""family_history_with_overweight"",""FAVC""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",825
+"{""columns"":[""newyorkretail""],""methods"":[""Standard Deviation""]}",826
+"{""columns"":[""Cholesterol""],""methods"":[""Standard Deviation""]}",827
+"{""columns"":[""NumOfProducts"",""EstimatedSalary""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",828
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",829
+"{""columns"":[""WHEEZING"",""SHORTNESS OF BREATH"",""PEER_PRESSURE""],""methods"":[""Partial Correlation Coefficient"",""Mantel-Haenszel Test""]}",830
+"{""columns"":[""Duration"",""BMI""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",831
+"{""columns"":[""MntFishProducts"",""NumStorePurchases""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",832
+"{""columns"":[""Pstatus"",""higher"",""address""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",833
+"{""columns"":[""MntGoldProds"",""MntFruits"",""Recency""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",834
+"{""columns"":[""CH2O""],""methods"":[""Skewness""]}",835
+"{""columns"":[""Walc"",""failures"",""studytime""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",836
+"{""columns"":[""G2"",""absences"",""age""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",837
+"{""columns"":[""freetime"",""G3"",""Medu""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",838
+"{""columns"":[""Calories Burn"",""Dream Weight""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",839
+"{""columns"":[""WHEEZING"",""LUNG_CANCER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",840
+"{""columns"":[""Research Quality Score"",""Industry Score""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",841
+"{""columns"":[""studytime""],""methods"":[""Kurtosis""]}",842
+"{""columns"":[""Brand""],""methods"":[""Mode""]}",843
+"{""columns"":[""DEC""],""methods"":[""Quartile""]}",844
+"{""columns"":[""sex"",""internet""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",845
+"{""columns"":[""Recency"",""NumCatalogPurchases""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",846
+"{""columns"":[""HeartDisease"",""ChestPainType""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",847
+"{""columns"":[""torque(Nm)""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",848
+"{""columns"":[""Weight""],""methods"":[""Standard Deviation""]}",849
+"{""columns"":[""hypertension"",""work_type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",850
+"{""columns"":[""math score""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",851
+"{""columns"":[""Special""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",852
+"{""columns"":[""HP"",""Catch_Rate""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",853
+"{""columns"":[""famsup"",""activities""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",854
+"{""columns"":[""Nigeria"",""Myanmar"",""Year""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",855
+"{""columns"":[""Cholesterol""],""methods"":[""Median""]}",856
+"{""columns"":[""Year"",""Nigeria"",""Japan""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",857
+"{""columns"":[""Mjob"",""guardian""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",858
+"{""columns"":[""Death Age : 6-10 "",""Attack method: Armed Assault"",""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",859
+"{""columns"":[""# of Individuals Assisted in Pursuing Citizenship"",""# of Attendees at Children's and Teen Programming""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",860
+"{""columns"":[""International Outlook""],""methods"":[""Median""]}",861
+"{""columns"":[""Brazil""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",862
+"{""columns"":[""Attack method: Hijacking""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",863
+"{""columns"":[""X3 distance to the nearest MRT station"",""Y house price of unit area""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",864
+"{""columns"":[""Sp_Def"",""Height_m""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",865
+"{""columns"":[""Number of trees sold"",""Average Tree Price"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",866
+"{""columns"":[""Overall"",""Height""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",867
+"{""columns"":[""Death Age : 6-10 "",""Attack method: Armed Assault"",""Terrorist attacks""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",868
+"{""columns"":[""engine(cc)"",""price(in lakhs)""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",869
+"{""columns"":[""ANXIETY"",""ALCOHOL CONSUMING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",870
+"{""columns"":[""avg_satisfaction"",""avg_income""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Standard Deviation""]}",871
+"{""columns"":[""averagespread""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution"",""Anderson-Darling Test""]}",872
+"{""columns"":[""Bathrooms""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",873
+"{""columns"":[""AUG"",""ANU""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",874
+"{""columns"":[""math score""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",875
+"{""columns"":[""FAF"",""Age"",""NCP""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Pearson Correlation Coefficient"",""Kendall Correlation Coefficient""]}",876
+"{""columns"":[""mileage(kmpl)"",""engine(cc)""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient"",""Partial Correlation Coefficient"",""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance""]}",877
+"{""columns"":[""Year"",""Brazil""],""methods"":[""Median""]}",878
+"{""columns"":[""Philippines"",""Myanmar""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",879
+"{""columns"":[""EstimatedSalary""],""methods"":[""Quartile""]}",880
+"{""columns"":[""Total Computer Usage (Wireless + PC Sessions)"",""# of Homeless Individuals Served at The Source""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",881
+"{""columns"":[""Sp_Def"",""Weight_kg""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",882
+"{""columns"":[""age""],""methods"":[""Kurtosis""]}",883
+"{""columns"":[""age"",""studytime""],""methods"":[""Levene Test"",""Bartlett Test"",""Mood Variance Test"",""F-Test for Variance"",""Standard Deviation"",""Range"",""Quartile""]}",884
+"{""columns"":[""GENDER"",""COUGHING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",885
+"{""columns"":[""Death Age : 6-10 ""],""methods"":[""Quartile""]}",886
+"{""columns"":[""studytime""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",887
+"{""columns"":[""ME-107""],""methods"":[""Mode""]}",888
+"{""columns"":[""Preferred Foot"",""Weak Foot""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",889
+"{""columns"":[""AcceptedCmp2"",""Response""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",890
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",891
+"{""columns"":[""Average Tree Price"",""Sales""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",892
+"{""columns"":[""imdb_votes""],""methods"":[""Median""]}",893
+"{""columns"":[""Terrorism deaths"",""Death Age : 21-50 ""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics:Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Correlation Analysis: Spearman Correlation Coefficient"",""Correlation Analysis: Kendall Correlation Coefficient"",""Distribution Compliance Test: Anderson-Darling Test"",""Distribution Compliance Test: Shapiro-Wilk Test of Normality"",""Distribution Compliance Test: Kolmogorov-Smirnov Test for Normality"",""Distribution Compliance Test: Lilliefors Test"",""Distribution Compliance Test: Kolmogorov-Smirnov Test""]}",894
+"{""columns"":[""Myanmar"",""China"",""Year""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",895
+"{""columns"":[""avg_income"",""happyScore""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",896
+"{""columns"":[""India"",""Year""],""methods"":[""Mean""]}",897
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",898
+"{""columns"":[""New Cardholders""],""methods"":[""Standard Deviation""]}",899
+"{""columns"":[""Number of Ratings""],""methods"":[""Quartile"",""Range"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",900
+"{""columns"":[""Number of Ratings""],""methods"":[""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",901
+"{""columns"":[""goout""],""methods"":[""Mean""]}",902
+"{""columns"":[""work_setting"",""company_size""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",903
+"{""columns"":[""CGPA""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile""]}",904
+"{""columns"":[""SOP"",""CGPA""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",905
+"{""columns"":[""address"",""higher"",""sex""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",906
+"{""columns"":[""paid"",""higher"",""famsup""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",907
+"{""columns"":[""Body Type"",""Preferred Foot""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",908
+"{""columns"":[""Heart Rate""],""methods"":[""Quartile"",""Range"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",909
+"{""columns"":[""Japan"",""Philippines"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",910
+"{""columns"":[""schoolsup"",""higher"",""Pstatus""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",911
+"{""columns"":[""X2 house age""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",912
+"{""columns"":[""NumWebPurchases"",""MntMeatProducts"",""Income""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",913
+"{""columns"":[""Bathrooms""],""methods"":[""Skewness""]}",914
+"{""columns"":[""Death Age 100+""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",915
+"{""columns"":[""Year"",""Japan""],""methods"":[""Mean""]}",916
+"{""columns"":[""failures"",""goout""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",917
+"{""columns"":[""higher"",""internet"",""famsize""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",918
+"{""columns"":[""BMI"",""Age"",""Dream Weight""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",919
+"{""columns"":[""G2"",""Walc"",""goout""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",920
+"{""columns"":[""SMOKING"",""SHORTNESS OF BREATH""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",921
+"{""columns"":[""FATIGUE "",""ALCOHOL CONSUMING"",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",922
+"{""columns"":[""Attack method: Unarmed Assault""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",923
+"{""columns"":[""WHEEZING"",""CHEST PAIN"",""YELLOW_FINGERS""],""methods"":[""Mantel-Haenszel Test"",""Chi-square Independence Test"",""Fisher Exact Test""]}",924
+"{""columns"":[""Weight_kg""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",925
+"{""columns"":[""imdb_score""],""methods"":[""Kurtosis""]}",926
+"{""columns"":[""mileage(kmpl)"",""engine(cc)""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",927
+"{""columns"":[""famsize"",""internet"",""address""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",928
+"{""columns"":[""work_year""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",929
+"{""columns"":[""APR""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",930
+"{""columns"":[""Nigeria"",""Indonesia""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",931
+"{""columns"":[""writing score""],""methods"":[""Standard Deviation""]}",932
+"{""columns"":[""bmi""],""methods"":[""Quartile"",""Range"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",933
+"{""columns"":[""Attack method: Hostage Taking (Kidnapping)"",""Death Age : 6-10"",""Terrorist attacks""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",934
+"{""columns"":[""G3"",""Walc"",""traveltime""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",935
+"{""columns"":[""Age"",""NCP""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",936
+"{""columns"":[""Myanmar"",""Thailand"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation""]}",937
+"{""columns"":[""Actual Weight"",""Duration""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",938
+"{""columns"":[""Number of trees sold"",""Average Tree Price""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",939
+"{""columns"":[""freetime"",""goout""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",940
+"{""columns"":[""income_inequality"",""happyScore""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",941
+"{""columns"":[""Pstatus"",""guardian""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",942
+"{""columns"":[""Total Program Attendees"",""Total Computer Usage (Wireless + PC Sessions)""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",943
+"{""columns"":[""Radio Ad Budget ($)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",944
+"{""columns"":[""COUGHING"",""LUNG_CANCER"",""ALCOHOL CONSUMING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",945
+"{""columns"":[""Overall"",""Weight""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",946
+"{""columns"":[""Review #""],""methods"":[""Quartile""]}",947
+"{""columns"":[""RestingECG"",""HeartDisease""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",948
+"{""columns"":[""Years of Experience""],""methods"":[""Kurtosis""]}",949
+"{""columns"":[""JUN""],""methods"":[""Kurtosis""]}",950
+"{""columns"":[""ever_married"",""smoking_status""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",951
+"{""columns"":[""famsup"",""higher"",""sex""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",952
+"{""columns"":[""Total Computer Usage (Wireless + PC Sessions)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",953
+"{""columns"":[""Recency"",""MntMeatProducts""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Anderson-Darling Test"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",954
+"{""columns"":[""Kidhome"",""Teenhome"",""MntSweetProducts"",""Income""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",955
+"{""columns"":[""Education Level"",""Senior""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",956
+"{""columns"":[""Brazil"",""Vietnam""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",957
+"{""columns"":[""Wage"",""Overall"",""Age""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",958
+"{""columns"":[""TV Ad Budget ($)""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile""]}",959
+"{""columns"":[""Thailand"",""Bangladesh""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",960
+"{""columns"":[""Age"",""Height""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",961
+"{""columns"":[""Dalc"",""Walc""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",962
+"{""columns"":[""Philippines"",""Myanmar""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",963
+"{""columns"":[""North America""],""methods"":[""Median""]}",964
+"{""columns"":[""Total Library Visitors""],""methods"":[""Kurtosis""]}",965
+"{""columns"":[""Height"",""FCVC""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",966
+"{""columns"":[""Thailand"",""Vietnam""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",967
+"{""columns"":[""isLegendary"",""hasGender""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",968
+"{""columns"":[""Education"",""Response""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",969
+"{""columns"":[""Dalc""],""methods"":[""Descriptive Statistics: Range""]}",970
+"{""columns"":[""median_income"",""happyScore""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",971
+"{""columns"":[""Death Age 100+""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",972
+"{""columns"":[""ExerciseAngina"",""ST_Slope""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",973
+"{""columns"":[""Title"",""Hours Viewed""],""methods"":[""Kurtosis""]}",974
+"{""columns"":[""Cholesterol""],""methods"":[""Range""]}",975
+"{""columns"":[""address"",""reason""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",976
+"{""columns"":[""Potential""],""methods"":[""Median""]}",977
+"{""columns"":[""Age"",""Height""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",978
+"{""columns"":[""# of Individuals Assisted in Pursuing Citizenship""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",979
+"{""columns"":[""address"",""paid""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",980
+"{""columns"":[""studytime"",""failures""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",981
+"{""columns"":[""avg_satisfaction"",""std_satisfaction""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",982
+"{""columns"":[""Recency"",""MntFishProducts""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",983
+"{""columns"":[""FATIGUE "",""COUGHING"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",984
+"{""columns"":[""Additional_Work"",""Transportation""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",985
+"{""columns"":[""school"",""reason""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",986
+"{""columns"":[""Review""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",987
+"{""columns"":[""Age""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",988
+"{""columns"":[""family_history_with_overweight"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",989
+"{""columns"":[""famsize"",""romantic"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",990
+"{""columns"":[""Number of trees sold"",""Sales"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",991
+"{""columns"":[""Skill Moves"",""Real Face""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",992
+"{""columns"":[""Total Program Attendees"",""Total Cardholders""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",993
+"{""columns"":[""SWALLOWING DIFFICULTY"",""CHEST PAIN"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",994
+"{""columns"":[""Average Tree Price""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",995
+"{""columns"":[""BMI""],""methods"":[""Standard Deviation""]}",996
+"{""columns"":[""reason"",""internet""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",997
+"{""columns"":[""Weight""],""methods"":[""Median""]}",998
+"{""columns"":[""Skill Moves"",""Real Face""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",999
+"{""columns"":[""CHRONIC DISEASE"",""FATIGUE "",""GENDER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1000
+"{""columns"":[""AUG"",""SEP""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1001
+"{""columns"":[""NOV""],""methods"":[""Mean"",""Median"",""Mode"",""Standard Deviation"",""Range"",""Quartile"",""Skewness"",""Kurtosis""]}",1002
+"{""columns"":[""COUGHING"",""SHORTNESS OF BREATH"",""SMOKING""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1003
+"{""columns"":[""std_satisfaction"",""happyScore""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1004
+"{""columns"":[""Total Library Visitors"",""# of Homeless Individuals Served at The Source""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1005
+"{""columns"":[""Age""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",1006
+"{""columns"":[""nursery"",""romantic"",""Pstatus""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1007
+"{""columns"":[""MntFishProducts""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",1008
+"{""columns"":[""Special"",""Height""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1009
+"{""columns"":[""adjusted_satisfaction"",""std_satisfaction""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",1010
+"{""columns"":[""LOR ""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1011
+"{""columns"":[""studytime"",""freetime"",""age""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1012
+"{""columns"":[""Thailand"",""China""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1013
+"{""columns"":[""Total Program Attendees""],""methods"":[""Quartile""]}",1014
+"{""columns"":[""isLegendary"",""hasGender""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1015
+"{""columns"":[""MntFishProducts"",""NumStorePurchases"",""Income""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1016
+"{""columns"":[""CGPA""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1017
+"{""columns"":[""Height""],""methods"":[""Median""]}",1018
+"{""columns"":[""G1"",""freetime"",""Dalc""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1019
+"{""columns"":[""guardian"",""higher""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1020
+"{""columns"":[""Research Quality Score""],""methods"":[""Mean""]}",1021
+"{""columns"":[""Attack""],""methods"":[""Median""]}",1022
+"{""columns"":[""Death Age: 51-99 ""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test"",""Variance Test: F-Test for Variance""]}",1023
+"{""columns"":[""famrel"",""Walc""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1024
+"{""columns"":[""address"",""nursery"",""school""],""methods"":[""Chi-square Independence Test"",""Mantel-Haenszel Test"",""Fisher Exact Test""]}",1025
+"{""columns"":[""age"",""health""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1026
+"{""columns"":[""Review""],""methods"":[""Standard Deviation""]}",1027
+"{""columns"":[""Income"",""Z_CostContact""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Distribution Compliance Test: Kolmogorov-Smirnov Test"",""Distribution Compliance Test: Anderson-Darling Test""]}",1028
+"{""columns"":[""Hours Viewed"",""Number of Ratings""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1029
+"{""columns"":[""CAEC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1030
+"{""columns"":[""Sp_Def"",""Speed"",""Sp_Atk""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1031
+"{""columns"":[""Age"",""Oldpeak""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Kolmogorov-Smirnov Test""]}",1032
+"{""columns"":[""median_income""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution""]}",1033
+"{""columns"":[""Total eMedia Circulation"",""Total Computer Usage (Wireless + PC Sessions)""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",1034
+"{""columns"":[""MntFishProducts""],""methods"":[""Skewness"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Kurtosis""]}",1035
+"{""columns"":[""NumStorePurchases"",""Kidhome"",""MntGoldProds""],""methods"":[""Partial Correlation Coefficient""]}",1036
+"{""columns"":[""CH2O""],""methods"":[""Kolmogorov-Smirnov Test for Exponential distribution""]}",1037
+"{""columns"":[""Balance"",""EstimatedSalary""],""methods"":[""Kolmogorov-Smirnov Test""]}",1038
+"{""columns"":[""Attack method: Hostage Taking (Barricade Incident)"",""Attack method: Facility/Infrastructure Attack"",""Attack method: Hijacking""],""methods"":[""Partial Correlation Coefficient""]}",1039
+"{""columns"":[""GRE Score"",""CGPA""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1040
+"{""columns"":[""MntFishProducts"",""Z_CostContact"",""Teenhome""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1041
+"{""columns"":[""heart_disease"",""work_type""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1042
+"{""columns"":[""GRE Score"",""TOEFL Score""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test""]}",1043
+"{""columns"":[""avg_income"",""happyScore""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1044
+"{""columns"":[""hypertension"",""ever_married""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1045
+"{""columns"":[""X2 house age"",""Y house price of unit area""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1046
+"{""columns"":[""Height_m"",""Catch_Rate""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Distribution Compliance Test: Shapiro-Wilk Test of Normality"",""Distribution Compliance Test: Kolmogorov-Smirnov Test for Normality"",""Distribution Compliance Test: Lilliefors Test"",""Distribution Compliance Test: Anderson-Darling Test"",""Correlation Analysis: Pearson Correlation Coefficient"",""Correlation Analysis: Spearman Correlation Coefficient"",""Correlation Analysis: Kendall Correlation Coefficient""]}",1047
+"{""columns"":[""schoolsup""],""methods"":[""Mode""]}",1048
+"{""columns"":[""MntSweetProducts"",""NumDealsPurchases""],""methods"":[""Kolmogorov-Smirnov Test""]}",1049
+"{""columns"":[""Number of trees sold"",""Sales""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1050
+"{""columns"":[""GDP""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1051
+"{""columns"":[""Weight_kg""],""methods"":[""Standard Deviation""]}",1052
+"{""columns"":[""max_power(bhp)"",""price(in lakhs)""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1053
+"{""columns"":[""Genre""],""methods"":[""Mode""]}",1054
+"{""columns"":[""family_history_with_overweight"",""FAVC"",""Gender""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1055
+"{""columns"":[""Rest of World""],""methods"":[""Mean""]}",1056
+"{""columns"":[""GRE Score"",""TOEFL Score""],""methods"":[""Range"",""Quartile"",""Standard Deviation"",""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1057
+"{""columns"":[""famsize"",""paid"",""school"",""address""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1058
+"{""columns"":[""Attack method: Armed Assault"",""Terrorist Death Type : Suicide""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1059
+"{""columns"":[""Catch_Rate""],""methods"":[""Mean""]}",1060
+"{""columns"":[""ST_Slope"",""HeartDisease""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1061
+"{""columns"":[""family_history_with_overweight"",""CAEC""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1062
+"{""columns"":[""CHEST PAIN"",""LUNG_CANCER"",""CHRONIC DISEASE""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1063
+"{""columns"":[""Terrorist Death Type : Killed"",""Terrorist Death Type : Suicide"",""Attack method: Hostage Taking (Barricade Incident)""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1064
+"{""columns"":[""Height_m"",""Catch_Rate""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",1065
+"{""columns"":[""GENDER"",""SWALLOWING DIFFICULTY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1066
+"{""columns"":[""Age"",""RestingBP""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1067
+"{""columns"":[""Age"",""Years of Experience""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1068
+"{""columns"":[""experience_level"",""company_size""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1069
+"{""columns"":[""HP""],""methods"":[""Mean""]}",1070
+"{""columns"":[""Number of trees sold"",""Year""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1071
+"{""columns"":[""Potential""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",1072
+"{""columns"":[""CHRONIC DISEASE"",""CHEST PAIN"",""PEER_PRESSURE""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1073
+"{""columns"":[""Medu"",""G2""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Chi-square Independence Test"",""Fisher Exact Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1074
+"{""columns"":[""failures""],""methods"":[""Skewness""]}",1075
+"{""columns"":[""Myanmar"",""Thailand"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1076
+"{""columns"":[""Europe""],""methods"":[""Kurtosis""]}",1077
+"{""columns"":[""FAVC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1078
+"{""columns"":[""Sex"",""ChestPainType""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1079
+"{""columns"":[""CreditScore"",""EstimatedSalary""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",1080
+"{""columns"":[""Nigeria"",""Vietnam""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1081
+"{""columns"":[""activities"",""internet""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1082
+"{""columns"":[""United States""],""methods"":[""Kolmogorov-Smirnov Test for Uniform distribution""]}",1083
+"{""columns"":[""Bangladesh""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Skewness"",""Kurtosis""]}",1084
+"{""columns"":[""paid"",""activities"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1085
+"{""columns"":[""X4 number of convenience stores""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation""]}",1086
+"{""columns"":[""freetime"",""goout""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1087
+"{""columns"":[""CAEC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1088
+"{""columns"":[""Japan"",""India""],""methods"":[""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",1089
+"{""columns"":[""Value""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",1090
+"{""columns"":[""SEP""],""methods"":[""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1091
+"{""columns"":[""Pakistan"",""Vietnam"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1092
+"{""columns"":[""adjusted_satisfaction""],""methods"":[""Mean""]}",1093
+"{""columns"":[""ANXIETY"",""LUNG_CANCER""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1094
+"{""columns"":[""std_satisfaction""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1095
+"{""columns"":[""Philippines"",""Vietnam"",""Year""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1096
+"{""columns"":[""SCC"",""SMOKE""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1097
+"{""columns"":[""CHRONIC DISEASE"",""COUGHING"",""ANXIETY""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1098
+"{""columns"":[""RestingECG"",""HeartDisease""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1099
+"{""columns"":[""Bangladesh"",""China"",""Year""],""methods"":[""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1100
+"{""columns"":[""Total"",""Attack""],""methods"":[""Kolmogorov-Smirnov Test""]}",1101
+"{""columns"":[""University Rating"",""Research""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1102
+"{""columns"":[""famrel"",""health""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient"",""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics:Mode"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",1103
+"{""columns"":[""ALCOHOL CONSUMING"",""COUGHING"",""YELLOW_FINGERS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1104
+"{""columns"":[""Research Environment Score""],""methods"":[""Descriptive Statistics"",""Kurtosis""]}",1105
+"{""columns"":[""Fedu"",""freetime""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Anderson-Darling Test"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1106
+"{""columns"":[""school"",""address"",""reason""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1107
+"{""columns"":[""Actual Weight"",""Duration""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1108
+"{""columns"":[""Average Tree Price"",""Type of tree""],""methods"":[""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",1109
+"{""columns"":[""std_satisfaction"",""income_inequality"",""adjusted_satisfaction""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1110
+"{""columns"":[""Pstatus"",""nursery"",""famsize""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1111
+"{""columns"":[""schoolsup"",""nursery"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1112
+"{""columns"":[""MntFruits"",""Z_CostContact""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Kolmogorov-Smirnov Test"",""Anderson-Darling Test"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1113
+"{""columns"":[""Attack method: Bombing/Explosion""],""methods"":[""Standard Deviation""]}",1114
+"{""columns"":[""work_type"",""smoking_status""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1115
+"{""columns"":[""FCVC""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1116
+"{""columns"":[""HP""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test""]}",1117
+"{""columns"":[""MntWines""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1118
+"{""columns"":[""engine(cc)"",""max_power(bhp)"",""mileage(kmpl)""],""methods"":[""Partial Correlation Coefficient"",""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1119
+"{""columns"":[""MntGoldProds"",""NumWebPurchases""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Anderson-Darling Test"",""Lilliefors Test"",""Kolmogorov-Smirnov Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1120
+"{""columns"":[""Age"",""Heart Rate""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""F-Test for Variance"",""Levene Test"",""Bartlett Test"",""Mood Variance Test""]}",1121
+"{""columns"":[""ST_Slope"",""FastingBS""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1122
+"{""columns"":[""Height"",""CH2O""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance"",""Variance Test: Mood Variance Test""]}",1123
+"{""columns"":[""MTRANS"",""Gender""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1124
+"{""columns"":[""guardian"",""higher""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1125
+"{""columns"":[""avg_glucose_level"",""bmi""],""methods"":[""Descriptive Statistics: Standard Deviation"",""Variance Test: F-Test for Variance"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test""]}",1126
+"{""columns"":[""paid"",""activities"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1127
+"{""columns"":[""CAEC"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1128
+"{""columns"":[""avg_income"",""median_income""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1129
+"{""columns"":[""Myanmar""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",1130
+"{""columns"":[""ALLERGY "",""SHORTNESS OF BREATH""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1131
+"{""columns"":[""Total Cardholders""],""methods"":[""Quartile""]}",1132
+"{""columns"":[""Teenhome""],""methods"":[""Shapiro-Wilk Test of Normality"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Anderson-Darling Test"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1133
+"{""columns"":[""AGE""],""methods"":[""Skewness""]}",1134
+"{""columns"":[""NCP"",""CH2O""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",1135
+"{""columns"":[""SMOKING"",""CHEST PAIN""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1136
+"{""columns"":[""Death Age : 11-20 "",""Attack method: Assassination"",""Attack method: Hijacking""],""methods"":[""Partial Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1137
+"{""columns"":[""Special""],""methods"":[""Mean""]}",1138
+"{""columns"":[""Gender"",""NObeyesdad""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test""]}",1139
+"{""columns"":[""# of Homeless Individuals Served at The Source""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",1140
+"{""columns"":[""paid"",""internet"",""schoolsup""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1141
+"{""columns"":[""losangelesretail""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile""]}",1142
+"{""columns"":[""traveltime"",""G1""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Mean"",""Median"",""Mode"",""Range"",""Quartile"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",1143
+"{""columns"":[""paid"",""activities"",""school""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1144
+"{""columns"":[""Duration"",""BMI""],""methods"":[""Mood Variance Test"",""Levene Test"",""Bartlett Test"",""F-Test for Variance""]}",1145
+"{""columns"":[""Japan"",""Bangladesh"",""Year""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1146
+"{""columns"":[""Japan"",""China"",""Year""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Standard Deviation"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Skewness"",""Descriptive Statistics: Kurtosis"",""Variance Test: F-Test for Variance"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: Mood Variance Test""]}",1147
+"{""columns"":[""company_location""],""methods"":[""Mode""]}",1148
+"{""columns"":[""Thailand""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test"",""Mean"",""Median"",""Mode"",""Standard Deviation"",""Skewness"",""Kurtosis"",""Quartile"",""Range""]}",1149
+"{""columns"":[""EstimatedSalary""],""methods"":[""Shapiro-Wilk Test of Normality"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test for Normality"",""Lilliefors Test""]}",1150
+"{""columns"":[""Death Age : 21-50 ""],""methods"":[""Mean""]}",1151
+"{""columns"":[""freetime"",""health"",""failures""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1152
+"{""columns"":[""Philippines"",""Thailand"",""Year""],""methods"":[""Descriptive Statistics: Mean"",""Descriptive Statistics: Median"",""Descriptive Statistics: Range"",""Descriptive Statistics: Quartile"",""Descriptive Statistics: Standard Deviation"",""Variance Test: Levene Test"",""Variance Test: Bartlett Test"",""Variance Test: F-Test for Variance""]}",1153
+"{""columns"":[""runtime""],""methods"":[""Quartile"",""Range"",""Median"",""Mean"",""Standard Deviation"",""Skewness"",""Kurtosis""]}",1154
+"{""columns"":[""Walc"",""health"",""failures""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1155
+"{""columns"":[""experience_level"",""work_setting""],""methods"":[""Chi-square Independence Test"",""Fisher Exact Test"",""Mantel-Haenszel Test""]}",1156
+"{""columns"":[""Potential"",""Release Clause""],""methods"":[""Standard Deviation"",""Range"",""Quartile"",""Levene Test"",""Bartlett Test"",""F-Test for Variance"",""Mood Variance Test""]}",1157
+"{""columns"":[""Total"",""HP"",""Attack"",""Defense"",""Sp_Atk"",""Sp_Def"",""Speed""],""methods"":[""Mean""]}",1158
+"{""columns"":[""Number of trees sold"",""Sales"",""Year""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Partial Correlation Coefficient""]}",1159
+"{""columns"":[""G3""],""methods"":[""Kolmogorov-Smirnov Test for Gamma distribution"",""Anderson-Darling Test"",""Kolmogorov-Smirnov Test""]}",1160
+"{""columns"":[""Total Cardholders"",""# of Attendees at Children's and Teen Programming""],""methods"":[""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient"",""Pearson Correlation Coefficient""]}",1161
+"{""columns"":[""GRE Score"",""Chance of Admit ""],""methods"":[""Pearson Correlation Coefficient"",""Spearman Correlation Coefficient"",""Kendall Correlation Coefficient""]}",1162

@@ -30,7 +30,7 @@ class MetadataMerge(BaseAnalysis):
         return ["df_with_metadata"]
     
     def run(self, context: AnalysisContext) -> AnalysisContext:
-        """Merge metadata from mini-StatQA.json."""
+        """Merge metadata from mini-StatQA.json or StatDatasets."""
         df = context.df.copy()
         
         # Check if serial_number column exists
@@ -49,13 +49,31 @@ class MetadataMerge(BaseAnalysis):
             context.add_result("df_with_metadata", True)
             return context
         
-        print("[*] Merging metadata from mini-StatQA.json...")
+        print("[*] Merging metadata from dataset JSON...")
         
-        # Load mini-StatQA.json
-        json_path = Path("Data/Integrated Dataset/Balanced Benchmark/mini-StatQA.json")
-        if not json_path.exists():
-            print(f"[!] mini-StatQA.json not found at {json_path}")
-            print("[i] Skipping metadata merge. Ensure required columns are present in input.")
+        # Try to get dataset_id from config
+        dataset_id = context.config.custom_params.get('dataset_id')
+        
+        if dataset_id:
+            # Use StatDatasets/ structure
+            json_path = Path("StatDatasets") / "raw" / dataset_id / "data.json"
+            if json_path.exists():
+                print(f"[i] Using StatDatasets JSON: {json_path}")
+            else:
+                print(f"[!] StatDatasets JSON not found: {json_path}")
+                json_path = None
+        else:
+            # Fall back to legacy path
+            json_path = Path("Data/Integrated Dataset/Balanced Benchmark/mini-StatQA.json")
+            if json_path.exists():
+                print(f"[i] Using legacy JSON path: {json_path}")
+            else:
+                print(f"[!] Legacy JSON not found: {json_path}")
+                json_path = None
+        
+        if json_path is None or not json_path.exists():
+            print("[!] No metadata JSON found. Skipping metadata merge.")
+            print("[i] Hint: Use --dataset-id flag or ensure metadata columns are in input CSV.")
             context.df = df
             context.add_result("df_with_metadata", True)
             return context
@@ -64,7 +82,7 @@ class MetadataMerge(BaseAnalysis):
             with open(json_path, 'r', encoding='utf-8') as f:
                 json_data = json.load(f)
         except Exception as e:
-            print(f"[!] Error loading mini-StatQA.json: {e}")
+            print(f"[!] Error loading metadata JSON: {e}")
             context.df = df
             context.add_result("df_with_metadata", True)
             return context

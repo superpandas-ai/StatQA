@@ -1,0 +1,12 @@
+{
+  "dataset_id": "mini-statqa",
+  "prompt_version": "v2",
+  "trick": "manual",
+  "seed": null,
+  "generation_time": "2025-12-27T14:28:42.814416",
+  "row_count": 1163,
+  "prompt_template_hash": "2de4d3cb",
+  "template_source": "default",
+  "has_manual_template": true,
+  "manual_template_source": "my_manual_template.txt"
+}

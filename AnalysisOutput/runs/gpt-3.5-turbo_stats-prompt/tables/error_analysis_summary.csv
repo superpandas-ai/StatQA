@@ -1,0 +1,2 @@
+Model,Invalid Answer,Column Selection Error (CSE),Statistical Task Confusion (STC),Applicability Error (AE),Mixed Errors (CSE+STC),Mixed Errors (CSE+AE),Mixed Errors (STC+AE),Mixed Errors (CSE+STC+AE)
+gpt-3.5-turbo_stats-prompt,0.01032,0.03869,0.06105,0.36543,0.01032,0.02064,0.0,0.0

@@ -2,18 +2,53 @@
 
 ## 🚀 Get Started in 2 Minutes
 
-### Option 1: Command Line (Easiest)
+### Option 1: Unified Workflow (Recommended)
+
+The new unified framework supports the complete pipeline from dataset import to analysis:
 
 ```bash
-# Analyze a single model output
+# 1. Import dataset
+python -m statqa_analysis dataset import \
+  --dataset-id mini-statqa \
+  --from-json "Data/Integrated Dataset/Balanced Benchmark/mini-StatQA.json"
+
+# 2. Build prompts
+python -m statqa_analysis prompts build \
+  --dataset-id mini-statqa \
+  --prompt-version v1 \
+  --trick zero-shot
+
+# 3. Run model inference
+python -m statqa_analysis model run \
+  --model gpt-4 \
+  --dataset-id mini-statqa \
+  --prompt-version v1 \
+  --trick zero-shot
+
+# 4. Analyze results
+python -m statqa_analysis run \
+  --input AnalysisOutput/runs/gpt-4_mini-statqa_v1_zero-shot/raw/model_output.csv \
+  --dataset-id mini-statqa
+```
+
+### Option 2: Analyze Existing Outputs
+
+If you already have model outputs:
+
+```bash
+# Analyze a single model output (with dataset metadata)
+python -m statqa_analysis run \
+    --input "Model Answer/Origin Answer/gpt-3.5-turbo_zero-shot.csv" \
+    --dataset-id mini-statqa \
+    --out "AnalysisOutput"
+
+# Or without dataset-id (if CSV has all metadata)
 python -m statqa_analysis run \
     --input "Model Answer/Origin Answer/gpt-3.5-turbo_zero-shot.csv" \
     --out "AnalysisOutput"
-
-# Results will be in: AnalysisOutput/runs/gpt-3.5-turbo_zero-shot/
 ```
 
-### Option 2: Python API
+### Option 3: Python API
 
 ```python
 from statqa_analysis import ModelOutputAnalyzer
@@ -26,13 +61,6 @@ context = analyzer.run_all()
 
 # Access results
 print(f"Overall accuracy: {context.get_result('overall_accuracy'):.4f}")
-```
-
-### Option 3: Batch Script
-
-```bash
-# Analyze multiple models at once
-sh Script/model_answer_analysis.sh
 ```
 
 ## 📊 What You Get
@@ -89,9 +117,10 @@ python -m statqa_analysis run \
 
 ## 📚 Full Documentation
 
-- **Framework Guide**: `ANALYSIS_FRAMEWORK.md`
-- **Implementation Notes**: `IMPLEMENTATION_NOTES.md`
-- **Main README**: `README.md` (Analysis section)
+- **Unified Workflow Guide**: `UNIFIED_WORKFLOW.md` ⭐ (Complete end-to-end guide)
+- **CLI Reference**: `CLI_REFERENCE.md` (All commands and options)
+- **Framework Architecture**: `ANALYSIS_FRAMEWORK.md` (Technical details)
+- **Template Guide**: `prompts/TEMPLATE_GUIDE.md` (Custom prompt templates)
 
 ## ✅ Verify Installation
 
@@ -107,20 +136,20 @@ python test_analysis_framework.py
 **"Module not found: statqa_analysis"**
 → Run from StatQA root directory
 
+**"Dataset 'X' not found"**
+→ Import it first: `python -m statqa_analysis dataset import --dataset-id X --from-json <path>`
+
 **"No 'model_answer' column found"**
-→ Use files from `Model Answer/Origin Answer/`, not `Processed Answer/`
+→ Use files from `Model Answer/Origin Answer/` or `AnalysisOutput/runs/<run-id>/raw/`
+
+**"No 'serial_number' column found"**
+→ Use `--dataset-id` flag to enable metadata merge from StatDatasets
 
 **Plots not generating**
 → Install: `pip install matplotlib seaborn`
 
-## 🔧 Legacy Scripts (Deprecated)
-
-Old approach still works but is deprecated:
-```bash
-sh Script/answer_analysis.sh  # ⚠️  Legacy
-```
-
-Use the new framework instead for better organization and extensibility.
+**Azure OpenAI credentials not found**
+→ Set environment variables: `GPT4_ENDPOINT`, `GPT4_API_KEY`, `API_VERSION`
 
 ## 💡 Next Steps
 

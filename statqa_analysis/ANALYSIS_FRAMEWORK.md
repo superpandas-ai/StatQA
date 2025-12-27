@@ -2,7 +2,7 @@
 
 ## Overview
 
-The StatQA Analysis Framework is a unified, extensible system for analyzing LLM outputs on the StatQA benchmark. It replaces the fragmented legacy scripts with a clean, plugin-based architecture.
+The StatQA Analysis Framework is a unified, extensible system for managing datasets, generating prompts, running model inference, and analyzing LLM outputs on the StatQA benchmark. It provides a complete end-to-end pipeline from raw data to analysis results.
 
 ## Quick Start
 
@@ -42,27 +42,41 @@ context = cohort.run_all()
 
 ### Command-Line Usage
 
-```bash
-# Single run
-python -m statqa_analysis run \
-    --input "Model Answer/Origin Answer/gpt-3.5-turbo_zero-shot.csv" \
-    --out "AnalysisOutput" \
-    --run-id "gpt-3.5-turbo_zero-shot"
+The framework provides a complete CLI with multiple commands:
 
-# Cohort
+```bash
+# Dataset management
+python -m statqa_analysis dataset import \
+    --dataset-id mini-statqa \
+    --from-json "Data/Integrated Dataset/Balanced Benchmark/mini-StatQA.json"
+
+# Prompt generation
+python -m statqa_analysis prompts build \
+    --dataset-id mini-statqa \
+    --prompt-version v1 \
+    --trick zero-shot
+
+# Model inference
+python -m statqa_analysis model run \
+    --model gpt-4 \
+    --dataset-id mini-statqa \
+    --prompt-version v1 \
+    --trick zero-shot
+
+# Analysis
+python -m statqa_analysis run \
+    --input AnalysisOutput/runs/gpt-4_mini-statqa_v1_zero-shot/raw/model_output.csv \
+    --dataset-id mini-statqa \
+    --out "AnalysisOutput"
+
+# Cohort analysis
 python -m statqa_analysis cohort \
     --input-dir "AnalysisOutput/runs" \
     --out "AnalysisOutput" \
     --cohort-name "my-cohort"
-
-# With options
-python -m statqa_analysis run \
-    --input model.csv \
-    --out results \
-    --no-plots \
-    --method-metric jaccard \
-    --plot-format png
 ```
+
+See `CLI_REFERENCE.md` for complete command reference.
 
 ## Architecture
 
@@ -76,7 +90,18 @@ statqa_analysis/
 ├── pipeline.py          # BaseAnalysis, AnalysisPipeline
 ├── analyzer.py          # ModelOutputAnalyzer, CohortAnalyzer
 ├── cli.py               # Command-line interface
+├── datasets/            # Dataset management
+│   ├── importer.py      # DatasetImporter
+│   └── registry.py      # DatasetRegistry
+├── prompts/             # Prompt generation
+│   ├── builder.py       # PromptBuilder
+│   ├── metadata.py      # Metadata provider
+│   ├── templates.py     # Prompt templates
+│   └── template_loader.py  # Template loading
+├── inference/           # Model inference
+│   └── azure_openai.py  # AzureOpenAIRunner
 └── analyses/            # Pluggable analysis modules
+    ├── metadata_merge.py
     ├── ground_truth.py
     ├── answer_extraction.py
     ├── compare_count.py

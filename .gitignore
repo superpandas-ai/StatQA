@@ -10,4 +10,3 @@
 # /Model Answer/Processed Answer (for task confusion analysis)/*
 /Integrated Dataset/Dataset with Prompt/Training Set/*
 .env
-AnalysisOutput/

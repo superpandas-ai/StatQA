@@ -1,0 +1,18 @@
+{
+  "dataset_id": "mini-statqa",
+  "source_path": "/home/haris/git/StatQA/Data/Integrated Dataset/Balanced Benchmark/mini-StatQA.json",
+  "import_time": "2025-12-27T13:57:25.739843",
+  "row_count": 1163,
+  "schema_hash": "889112ed",
+  "serial_number_synthesized": false,
+  "fields": [
+    "dataset",
+    "refined_question",
+    "relevant_column",
+    "results",
+    "ground_truth",
+    "task",
+    "difficulty",
+    "serial_number"
+  ]
+}

@@ -3,21 +3,16 @@
 Task confusion matrix analysis.
 """
 
-import sys
-import os
 from collections import Counter
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
 
-# Add parent directory to path to import mappings
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-import mappings
-
 from ..pipeline import BaseAnalysis
 from ..config import AnalysisContext
 from ..io import safe_literal_eval
+from ..mappings import tasks_to_methods, task_abbreviations
 
 
 class ConfusionMatrixAnalysis(BaseAnalysis):
@@ -71,11 +66,11 @@ class ConfusionMatrixAnalysis(BaseAnalysis):
         cm = confusion_matrix(
             df_valid['task'], 
             df_valid['answer_task'], 
-            labels=list(mappings.tasks_to_methods.keys())
+            labels=list(tasks_to_methods.keys())
         )
         
         # Plot
-        labels = [mappings.task_abbreviations[task] for task in mappings.tasks_to_methods.keys()]
+        labels = [task_abbreviations[task] for task in tasks_to_methods.keys()]
         
         plt.figure(figsize=(6, 5))
         sns.heatmap(
@@ -112,10 +107,10 @@ class ConfusionMatrixAnalysis(BaseAnalysis):
         
         # Count occurrences
         method_count = Counter(method_list)
-        task_scores = {task: 0 for task in mappings.tasks_to_methods.keys()}
+        task_scores = {task: 0 for task in tasks_to_methods.keys()}
         
         for method, count in method_count.items():
-            for task, methods in mappings.tasks_to_methods.items():
+            for task, methods in tasks_to_methods.items():
                 # Normalize task methods to lowercase for comparison
                 methods_lower = [m.lower() for m in methods]
                 if method in methods_lower:

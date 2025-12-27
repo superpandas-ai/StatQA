@@ -3,18 +3,14 @@
 Single-run radar chart generation showing performance across tasks.
 """
 
-import sys
-import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-import mappings
-
 from ..pipeline import BaseAnalysis
 from ..config import AnalysisContext
+from ..mappings import task_abbreviations
 
 
 class SingleRunRadarChart(BaseAnalysis):
@@ -59,7 +55,7 @@ class SingleRunRadarChart(BaseAnalysis):
         scores = df['score_rate'].tolist()
         
         # Map tasks to abbreviations
-        task_abbrevs = [mappings.task_abbreviations.get(task, task) for task in tasks]
+        task_abbrevs = [task_abbreviations.get(task, task) for task in tasks]
         
         # Create radar chart
         num_vars = len(tasks)

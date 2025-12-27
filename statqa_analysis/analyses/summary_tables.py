@@ -3,12 +3,8 @@
 Summary table generation for cohort analysis.
 """
 
-import sys
-import os
 import pandas as pd
 from pathlib import Path
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from ..pipeline import BaseAnalysis
 from ..config import AnalysisContext

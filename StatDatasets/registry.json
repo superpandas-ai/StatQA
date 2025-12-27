@@ -1,0 +1,8 @@
+{
+  "mini-statqa": {
+    "raw_dir": "/home/haris/git/StatQA/StatDatasets/raw/mini-statqa",
+    "row_count": 1163,
+    "import_time": "2025-12-27T13:57:25.739843",
+    "schema_hash": "889112ed"
+  }
+}

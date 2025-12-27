@@ -3,20 +3,16 @@
 Radar chart generation for cohort analysis.
 """
 
-import sys
-import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from pathlib import Path
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-import mappings
-
 from ..pipeline import BaseAnalysis
 from ..config import AnalysisContext
 from ..io import load_csv
+from ..mappings import task_abbreviations
 
 
 class RadarChartGeneration(BaseAnalysis):
@@ -101,7 +97,7 @@ class RadarChartGeneration(BaseAnalysis):
                 
                 # Map tasks to abbreviations
                 tasks = [
-                    mappings.task_abbreviations.get(task, task) 
+                    task_abbreviations.get(task, task) 
                     for task in scores.index.tolist()
                 ]
                 
@@ -128,15 +124,20 @@ class RadarChartGeneration(BaseAnalysis):
             for model in unique_models
         ]
         
+        plt.suptitle(title, fontsize=16, y=1.02)
+        
+        # Adjust layout to make room for legend on the right
+        # Leave space on the right side for the legend
+        plt.tight_layout(rect=[0, 0, 0.80, 0.98])  # Leave 20% space on right for legend
+        
+        # Place legend outside the plot area (to the right)
         fig.legend(
             handles=legend_elements,
-            loc='center right',
-            bbox_to_anchor=(1.15, 0.5),
-            fontsize=12
+            loc='center left',
+            bbox_to_anchor=(1.00, 0.5),  # Position legend closer to the plot
+            fontsize=12,
+            frameon=True
         )
-        
-        plt.suptitle(title, fontsize=16, y=1.02)
-        plt.tight_layout()
         
         # Save
         output_path.parent.mkdir(parents=True, exist_ok=True)

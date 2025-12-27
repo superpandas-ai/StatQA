@@ -1,0 +1,6 @@
+model,overall_score_rate,Correlation Analysis,Contingency Table Test,Distribution Compliance Test,Variance Test,Descriptive Statistics
+gpt-5.2_stats-prompt,0.50731,0.41667,0.22656,0.58898,0.40574,0.86486
+gpt-5.2-one-shot-CoT,0.41187,0.3869,0.15625,0.33051,0.31557,0.84556
+gpt-5.2-zero-shot,0.30181,0.30952,0.07812,0.19915,0.18443,0.72201
+gpt-5.2-one-shot,0.38263,0.3631,0.10938,0.26695,0.30738,0.8417
+gpt-5.2-zero-shot-CoT,0.29923,0.30357,0.08203,0.21186,0.17623,0.70656

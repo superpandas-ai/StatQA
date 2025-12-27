@@ -1,0 +1,6 @@
+Column Information:
+{meta_info_list}
+
+Question: {refined_question}
+
+Answer in JSON format:

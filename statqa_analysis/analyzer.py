@@ -59,7 +59,21 @@ class ModelOutputAnalyzer:
         if config is None:
             input_path = Path(input_csv)
             if run_id is None:
-                run_id = input_path.stem
+                # Try to auto-detect run_id from path structure
+                # Look for pattern: .../runs/<run-id>/raw/model_outputs.csv
+                parts = input_path.parts
+                if 'runs' in parts:
+                    runs_idx = parts.index('runs')
+                    if runs_idx + 1 < len(parts):
+                        # Check if next part after 'runs' is likely a run-id
+                        # (i.e., not 'raw' or 'tables' or 'plots')
+                        potential_run_id = parts[runs_idx + 1]
+                        if potential_run_id not in ['raw', 'tables', 'plots', 'artifacts']:
+                            run_id = potential_run_id
+                
+                # Fallback to filename stem if no run_id detected
+                if run_id is None:
+                    run_id = input_path.stem
             
             config = AnalysisConfig(
                 input_csv=input_path,
@@ -168,7 +182,8 @@ class CohortAnalyzer:
         input_dir: str,
         output_dir: str = "AnalysisOutput",
         cohort_name: str = "default",
-        config: Optional[AnalysisConfig] = None
+        config: Optional[AnalysisConfig] = None,
+        filter_pattern: Optional[str] = None
     ):
         """
         Initialize the cohort analyzer.
@@ -187,6 +202,7 @@ class CohortAnalyzer:
         self.config = config
         self.input_dir = Path(input_dir)
         self.cohort_name = cohort_name
+        self.filter_pattern = filter_pattern
         self.context: Optional[AnalysisContext] = None
     
     def run_all(self) -> AnalysisContext:
@@ -241,12 +257,23 @@ class CohortAnalyzer:
         """
         files_by_run = {}
         
-        # Look for files in the standard output structure
-        runs_dir = self.input_dir / "runs"
+        # Handle both cases: input_dir is the runs directory itself, or its parent
+        if (self.input_dir / "runs").exists():
+            # input_dir is the parent (e.g., AnalysisOutput)
+            runs_dir = self.input_dir / "runs"
+        elif self.input_dir.name == "runs" or any((self.input_dir / d / "tables").exists() for d in self.input_dir.iterdir() if d.is_dir()):
+            # input_dir is already the runs directory (e.g., AnalysisOutput/runs)
+            runs_dir = self.input_dir
+        else:
+            return files_by_run
+        
         if runs_dir.exists():
             for run_dir in runs_dir.iterdir():
                 if run_dir.is_dir():
                     run_id = run_dir.name
+                    # Apply filter pattern if provided
+                    if self.filter_pattern and self.filter_pattern not in run_id:
+                        continue
                     tables_dir = run_dir / "tables"
                     if tables_dir.exists():
                         files_by_run[run_id] = {}
