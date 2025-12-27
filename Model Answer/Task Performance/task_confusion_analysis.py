@@ -38,15 +38,15 @@ def process_csv_files(file_paths, tasks_to_methods):
     processed_files_path_list = []
     for file_path in file_paths:
         data = pd.read_csv(file_path)
-        methods_list = []
-        for answer in data['extracted_answer']:
-            try:
-                methods = json.loads(answer.replace("\'", "\""))['methods']
-                methods_list.append(methods)
-            except json.JSONDecodeError:
-                methods_list.append([])  # Use empty list for unparseable entries
+        # methods_list = []
+        # for answer in data['extracted_answer']:
+        #     try:
+        #         methods = json.loads(answer.replace("\'", "\""))['methods']
+        #         methods_list.append(methods)
+        #     except json.JSONDecodeError:
+        #         methods_list.append([])  # Use empty list for unparseable entries
 
-        data['extracted_answer'] = methods_list
+        data['extracted_answer'] = [eval(x) for x in data['extracted_answer']]
         data['answer_task'] = data['extracted_answer'].apply(lambda x: determine_task(x, tasks_to_methods))
         
         # Construct a new output file path

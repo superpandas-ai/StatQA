@@ -412,59 +412,65 @@ if __name__ == "__main__":
 
     # Model answer analysis
     # llama Few-shot
-    model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot')
-    model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot')
     
-    # llama CoT
-    model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot-CoT')
+    # # llama CoT
+    # model_answer_integrate_analysis(answer_file_name='llama2_7b_zero-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='llama2_7b_one-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='llama2_13b_zero-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='llama2_13b_one-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_zero-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_one-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_zero-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_one-shot-CoT')
 
-    # GPT
+    # # GPT
     model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot')
     model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_one-shot')
-    model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot')
-    model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot')
 
-    # GPT CoT
+    # # GPT CoT
     model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_zero-shot-CoT')
     model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_one-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot-CoT')
-    model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4_zero-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4_one-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4o_zero-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4o_one-shot-CoT')
 
-    # SFT
-    model_answer_integrate_analysis(answer_file_name='llama2_7b_sft_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_sft_zero-shot')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_sft_zero-shot')
+    # # SFT
+    # model_answer_integrate_analysis(answer_file_name='llama2_7b_sft_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_sft_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_sft_zero-shot')
     
-    # Human
-    model_answer_integrate_analysis(answer_file_name='human_Stats Background_Closed-book')
-    model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Closed-book')
-    model_answer_integrate_analysis(answer_file_name='human_Stats Background_Open-book')
-    model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Open-book')
+    # # Human
+    # model_answer_integrate_analysis(answer_file_name='human_Stats Background_Closed-book')
+    # model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Closed-book')
+    # model_answer_integrate_analysis(answer_file_name='human_Stats Background_Open-book')
+    # model_answer_integrate_analysis(answer_file_name='human_Non-Stats Background_Open-book')
 
-    # LLMs with stats prompt: 1-shot+DK
+    # # LLMs with stats prompt: 1-shot+DK
     model_answer_integrate_analysis(answer_file_name='gpt-3.5-turbo_stats-prompt')
-    model_answer_integrate_analysis(answer_file_name='gpt-4_stats-prompt')
-    model_answer_integrate_analysis(answer_file_name='gpt-4o_stats-prompt')
-    model_answer_integrate_analysis(answer_file_name='llama2_7b_stats-prompt')
-    model_answer_integrate_analysis(answer_file_name='llama2_13b_stats-prompt')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_stats-prompt')
-    model_answer_integrate_analysis(answer_file_name='llama3_8b_stats-prompt')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4_stats-prompt')
+    # model_answer_integrate_analysis(answer_file_name='gpt-4o_stats-prompt')
+    # model_answer_integrate_analysis(answer_file_name='llama2_7b_stats-prompt')
+    # model_answer_integrate_analysis(answer_file_name='llama2_13b_stats-prompt')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_instruct_stats-prompt')
+    # model_answer_integrate_analysis(answer_file_name='llama3_8b_stats-prompt')
+
+    # model_answer_integrate_analysis(answer_file_name='gpt-5.2_zero-shot')
+    # model_answer_integrate_analysis(answer_file_name='gpt-5.2_one-shot')
+    # model_answer_integrate_analysis(answer_file_name='gpt-5.2_zero-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='gpt-5.2_one-shot-CoT')
+    # model_answer_integrate_analysis(answer_file_name='gpt-5.2_stats-prompt')
 
     pass

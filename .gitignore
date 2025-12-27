@@ -9,3 +9,5 @@
 # /Model Answer/Processed Answer/*
 # /Model Answer/Processed Answer (for task confusion analysis)/*
 /Integrated Dataset/Dataset with Prompt/Training Set/*
+.env
+AnalysisOutput/

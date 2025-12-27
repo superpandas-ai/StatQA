@@ -189,11 +189,147 @@ Note that `{MODEL}` can be one of "llama2-7b", "llama3-8b" and "llama3-8b-instru
 
 ## 📊Analysis
 
-To analyze LLMs' answers and evaluate their capabilities, you can run `answer_analysis.sh` script for preprocessing, accuracy calculation, performance and error analysis.
+### New Unified Analysis Framework (Recommended)
+
+We provide a new unified analysis framework with both Python API and CLI for analyzing model outputs:
+
+**Python API:**
+```python
+from statqa_analysis import ModelOutputAnalyzer, CohortAnalyzer
+
+# Analyze a single model output
+analyzer = ModelOutputAnalyzer(
+    input_csv="Model Answer/Origin Answer/gpt-3.5-turbo_zero-shot.csv",
+    output_dir="AnalysisOutput",
+    run_id="gpt-3.5-turbo_zero-shot"
+)
+analyzer.run_all()
+
+# Analyze multiple runs as a cohort
+cohort = CohortAnalyzer(
+    input_dir="AnalysisOutput/runs",
+    output_dir="AnalysisOutput",
+    cohort_name="gpt-experiments"
+)
+cohort.run_all()
+```
+
+**Command-Line Interface:**
+```bash
+# Analyze a single model output
+python -m statqa_analysis run \
+    --input "Model Answer/Origin Answer/gpt-3.5-turbo_zero-shot.csv" \
+    --out "AnalysisOutput" \
+    --run-id "gpt-3.5-turbo_zero-shot"
+
+# Analyze multiple runs as a cohort (generates summary tables and radar charts)
+python -m statqa_analysis cohort \
+    --input-dir "AnalysisOutput/runs" \
+    --out "AnalysisOutput" \
+    --cohort-name "gpt-experiments"
+
+# Batch script for multiple models
+sh Script/model_answer_analysis.sh
+```
+
+**Output Structure:**
+```
+AnalysisOutput/
+├── runs/
+│   └── <run_id>/
+│       ├── artifacts/
+│       │   └── processed.csv          # Enriched data with scores
+│       ├── tables/
+│       │   ├── task_performance_methods.csv
+│       │   ├── task_performance_columns.csv
+│       │   ├── task_performance_overall.csv
+│       │   └── error_analysis_summary.csv
+│       └── plots/
+│           └── confusion_matrix.pdf
+└── cohorts/
+    └── <cohort_name>/
+        ├── tables/
+        │   ├── methods_selection_summary_performance.csv
+        │   ├── columns_selection_summary_performance.csv
+        │   └── overall_selection_summary_performance.csv
+        └── plots/
+            ├── radar_methods.pdf
+            ├── radar_columns.pdf
+            └── radar_overall.pdf
+```
+
+**CLI Options:**
+```bash
+# Single run options
+python -m statqa_analysis run --help
+  --input, -i              Path to raw model output CSV (required)
+  --out, -o                Root output directory (default: AnalysisOutput)
+  --run-id                 Unique identifier for this run
+  --no-plots               Disable plot generation
+  --no-confusion-matrix    Disable confusion matrix
+  --no-error-analysis      Disable error type analysis
+  --method-metric          Metric for methods scoring: acc or jaccard (default: acc)
+  --plot-dpi               DPI for plots (default: 300)
+  --plot-format            Plot format: pdf, png, or svg (default: pdf)
+
+# Cohort options
+python -m statqa_analysis cohort --help
+  --input-dir, -i          Directory containing processed runs (required)
+  --out, -o                Root output directory (default: AnalysisOutput)
+  --cohort-name            Name for this cohort (default: default)
+  --no-radar-charts        Disable radar chart generation
+  --plot-dpi               DPI for plots (default: 300)
+  --plot-format            Plot format: pdf, png, or svg (default: pdf)
+```
+
+**Adding Custom Analyses:**
+
+The framework is designed to be extensible. To add a new analysis:
+
+1. Create a new module in `statqa_analysis/analyses/`:
+```python
+from statqa_analysis.pipeline import BaseAnalysis
+from statqa_analysis.config import AnalysisContext
+
+class MyCustomAnalysis(BaseAnalysis):
+    @property
+    def name(self) -> str:
+        return "my_custom_analysis"
+    
+    @property
+    def requires(self) -> list:
+        return ["df_with_scores"]  # Depends on scoring
+    
+    @property
+    def produces(self) -> list:
+        return ["custom_output"]
+    
+    def run(self, context: AnalysisContext) -> AnalysisContext:
+        # Your analysis logic here
+        df = context.df
+        # ... process data ...
+        context.add_artifact("custom_output", output_path)
+        return context
+```
+
+2. Register it in the pipeline (in `analyzer.py`).
+
+### Legacy Analysis Scripts (Deprecated)
+
+⚠️ The old analysis approach is deprecated but kept for backward compatibility:
 
 ```bash
-sh Script\answer_analysis.sh
+sh Script/answer_analysis.sh
 ```
+
+This runs the legacy scripts:
+- `analyze_model_answer.py`
+- `Model Answer/Task Performance/summary_performance.py`
+- `Model Answer/Task Performance/draw_radar_chart.py`
+- `Model Answer/Task Performance/task_confusion_analysis.py`
+- `Model Answer/Task Performance/error_type_analysis.py`
+
+**Migration Note:** The legacy scripts write to `Model Answer/` and `Chart/` directories. The new framework uses a cleaner `AnalysisOutput/` structure.
 
 ## ✏️Citation
 
